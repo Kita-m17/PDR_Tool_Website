@@ -58,6 +58,7 @@
           <li><a href="#relevantclosure">Relevant Closure</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#documents">Documents</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -167,6 +168,25 @@
                 <span class="trace-status" id="traceStatus"><i></i><em>running</em></span>
               </div>
 
+              <!-- <div class="trace-code">
+                <div class="trace-cursor"></div>
+                <div class="ln" data-ranks="&mdash;" data-note="Load the knowledge base and the query."><span class="lno">1</span><span class="mark"></span><span class="code"><span class="k">load</span> KB = {p<span class="s">&rarr;</span>b, b<span class="s">|&sim;</span>f, b<span class="s">|&sim;</span>w, p<span class="s">|&sim;</span>&not;f}</span></div>
+                <div class="ln" data-ranks="&mdash;" data-note="Read each &quot;typically&quot; as &quot;always&quot; for the classical checks."><span class="lno">2</span><span class="mark"></span><span class="code"><span class="k">materialise</span> &alpha;<span class="s">|&sim;</span>&beta; &rArr; &alpha;<span class="s">&rarr;</span>&beta;</span></div>
+                <div class="ln" data-ranks="&mdash;" data-note="The KB entails &not;p, so penguins are exceptional."><span class="lno">3</span><span class="mark"></span><span class="code"><span class="k">exceptional?</span> p <span class="ok">yes</span> &middot; b <span class="bad">no</span></span></div>
+                <div class="ln" data-ranks="0" data-note="The most typical statements go to rank 0."><span class="lno">4</span><span class="mark"></span><span class="code">rank[0] &larr; {b<span class="s">|&sim;</span>f, b<span class="s">|&sim;</span>w}</span></div>
+                <div class="ln" data-ranks="0, 1" data-note="The more specific penguin rule lands in rank 1."><span class="lno">5</span><span class="mark"></span><span class="code">rank[1] &larr; {p<span class="s">|&sim;</span>&not;f}</span></div>
+                <div class="ln" data-ranks="0, 1, &infin;" data-note="Classical facts always hold, so they sit in rank &infin;."><span class="lno">6</span><span class="mark"></span><span class="code">rank[&infin;] &larr; {p<span class="s">&rarr;</span>b}</span></div>
+                <div class="ln bp" data-ranks="1, &infin;" data-note="All ranks together entail &not;p, so Rational Closure discards the whole of rank 0."><span class="lno">7</span><span class="mark"></span><span class="code"><span class="k">if</span> R &#8872; &not;p: <span class="k">discard</span> rank[0]</span></div>
+                <div class="ln" data-ranks="1, &infin;" data-note="With ranks 1 and &infin; only, &not;p no longer follows, so it stops removing."><span class="lno">8</span><span class="mark"></span><span class="code"><span class="k">check</span> R &#8872; &not;p ? <span class="ok">no &rarr; stop</span></span></div>
+                <div class="ln" data-ranks="1, &infin;" data-note="p &rarr; w doesn't follow from {p &rarr; &not;f, p &rarr; b}. The wings drowned with rank 0."><span class="lno">9</span><span class="mark"></span><span class="code"><span class="k">return</span> p&rarr;w ? <span class="bad">&#10007; not entailed</span></span></div>
+              </div>
+
+              <div class="trace-watch">
+                <div><small>STEP</small><b id="traceStep">8 / 8</b></div>
+                <div><small>RANKS</small><b id="traceRanks">1, &infin;</b></div>
+                <div><small>QUERY</small><b>p |&sim; w</b></div>
+              </div> -->
+              
               <div class="trace-code">
                 <div class="trace-cursor"></div>
                 <div class="ln" data-ranks="4" data-note="Birds fly. Birds have wings. Penguins are birds. Penguins don't fly."><span class="lno">1</span><span class="mark"></span><span class="code"><span class="k">load</span> 4 rules about birds &amp; penguins</span></div>
@@ -192,100 +212,61 @@
       </div>
     </section><!-- /Overview Section -->
 
-        <!-- Background Section -->
-    <section id="background" class="background section light-background">
+    <!-- Background Section -->
+    <section id="why-us" class="section why-us light-background" data-builder="section">
 
-      <div class="container section-head" data-aos="fade-up">
-        <span class="section-eyebrow">Background</span>
-        <h2>From classical logic to defeasible reasoning</h2>
-      </div>
+      <div class="container-fluid">
 
-      <div class="container">
+        <div class="row gy-4">
 
-        <!-- One box: propositional logic, classical reasoning, defeasible reasoning -->
-        <div class="background-box" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
 
-            <div class="col-lg-4 background-topic">
-              <i class="bi bi-braces topic-icon"></i>
-              <h4>Propositional logic</h4>
-              <p>Propositional logic represents knowledge using simple statements called <em>atoms</em>, such as <em>platypus</em> ("is a platypus") or <em>hat</em> ("wears a hat"), joined by connectives like &not; (not), &and; (and), &or; (or) and &rarr; (implies). A knowledge base is a set of these statements.</p>
-              <p class="topic-example"><span>e.g.</span> perry &rarr; platypus means "Perry is a platypus".</p>
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Eum ipsam laborum deleniti </span><strong>velit pariatur architecto aut nihil</strong></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
             </div>
 
-            <div class="col-lg-4 background-topic">
-              <i class="bi bi-lock topic-icon"></i>
-              <h4>Classical reasoning</h4>
-              <p>A conclusion is entailed when it is true in every situation where the knowledge base is true. Classical reasoning is <strong>monotonic</strong>: adding new information can never take a conclusion back, so it cannot handle exceptions.</p>
-              <p class="topic-example"><span>e.g.</span> If platypuses never wear hats but Perry does, the only consistent answer is that Perry doesn't exist.</p>
-            </div>
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 background-topic">
-              <i class="bi bi-signpost-split topic-icon"></i>
-              <h4>Defeasible reasoning</h4>
-              <p>Defeasible reasoning adds "typically", written &alpha; |&sim; &beta;. Conclusions are tentative and can be overridden by more specific information. The KLM framework (Kraus, Lehmann and Magidor, 1990) gives it a formal foundation.</p>
-              <p class="topic-example"><span>e.g.</span> platypus |&sim; &not;hat and perry |&sim; hat: Perry is simply an exceptional platypus.</p>
-            </div>
+              <div class="faq-item faq-active">
 
-            <!-- Perry example: no hat -> hat -->
-            <div class="perry-strip">
-              <figure class="perry-fig">
-                <img src="assets/img/perry-plain.svg" alt="Perry the platypus without a hat">
-                <figcaption><code>platypus |&sim; &not;hat</code><span>Platypuses typically don't wear hats</span></figcaption>
-              </figure>
+                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-              <div class="perry-arrow">
-                <img src="assets/img/perry-hat-only.svg" alt="" class="perry-hat">
-                <i class="bi bi-arrow-right"></i>
-                <span>but</span>
-              </div>
+              <div class="faq-item">
+                <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-              <figure class="perry-fig">
-                <img src="assets/img/perry.svg" alt="Perry the platypus wearing his hat">
-                <figcaption><code>perry |&sim; hat</code><span>Perry typically does</span></figcaption>
-              </figure>
+              <div class="faq-item">
+                <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
             </div>
 
           </div>
-        </div>
 
-        <!-- The three algorithms -->
-        <h3 class="background-sub" data-aos="fade-up">The three algorithms</h3>
-
-        <div class="row gy-4 services">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item">
-              <div class="icon"><i class="bi bi-layers"></i></div>
-              <h4>Rational Closure</h4>
-              <p>Ranks statements from most general to most specific, then removes whole ranks until the conflict is gone. Simple and cautious, but it can remove unrelated information too: the <strong>drowning problem</strong>.</p>
-              <span class="algo-cite">Lehmann &amp; Magidor, 1992</span>
-            </div>
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
           </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon"><i class="bi bi-sliders"></i></div>
-              <h4>Lexicographic Closure</h4>
-              <p>Builds on Rational Closure, but instead of removing a whole rank it tries smaller and smaller groups of its statements, and keeps the largest ones that no longer cause a conflict. This "weakens" the rank rather than discarding it.</p>
-              <span class="algo-cite">Lehmann, 1995</span>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon"><i class="bi bi-bullseye"></i></div>
-              <h4>Relevant Closure</h4>
-              <p>Finds the statements that are actually responsible for the conflict (its justifications) and only removes those.</p>
-              <span class="algo-cite">Casini, Meyer, Moodley &amp; Nortj&eacute;, 2014</span>
-            </div>
-          </div>
-
         </div>
 
       </div>
 
-    </section><!-- /Background Section -->
+    </section><!-- /Why Us Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
@@ -496,28 +477,22 @@
     </section><!-- /Work Process Section -->
 
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action cta-perry section dark-background">
+    <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/Moonlit Platypus Spy Mission.png" alt="">
+      <img src="assets/img/bg/bg-8.webp" alt="">
 
       <div class="container">
-        <div class="row align-items-center gy-4" data-aos="zoom-in" data-aos-delay="100">
 
-          <div class="col-lg-8 text-center text-lg-start">
-            <span class="cta-eyebrow">Try it yourself</span>
-            <h3>See defeasible reasoning, one step at a time</h3>
-            <p>The PDR Tool is on GitHub. Clone the repository, run it locally, and step through exactly how each algorithm reaches its answer.</p>
-            <a class="cta-btn" href="https://github.com/Kita-m17/PDR_Tool" target="_blank" rel="noopener"><i class="bi bi-github"></i> View on GitHub <i class="bi bi-arrow-right"></i></a>
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Call To Action</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-
-          <div class="col-lg-4 text-center">
-            <a class="cta-qr" href="https://github.com/Kita-m17/PDR_Tool" target="_blank" rel="noopener">
-              <img src="assets/img/pdr-github-qr.png" alt="QR code linking to the PDR Tool on GitHub">
-              <span>Scan to open on GitHub</span>
-            </a>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
           </div>
-
         </div>
+
       </div>
 
     </section><!-- /Call To Action Section -->
@@ -643,126 +618,151 @@
     </section><!-- /Portfolio Section -->
 
     <!-- Team Section -->
-    <section id="team" class="pdr-team section light-background">
+    <section id="team" class="team section">
 
-      <div class="container section-head text-center" data-aos="fade-up">
-        <span class="section-eyebrow">Team</span>
-        <h2>The people behind PDR</h2>
-      </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="pdr-team-grid">
 
-          <div data-aos="fade-up">
-            <div class="pdr-member">
-              <div class="pdr-avatar"><span>LD</span></div>
-              <h3>Liam De Saldanha</h3>
-              <span class="pdr-role">Team member</span>
-              <a class="pdr-email" href="mailto:dsllia002@myuct.ac.za">dsllia002@myuct.ac.za</a>
-              <div class="pdr-social">
-                <!-- <a class="linkedin" href="https://www.linkedin.com/in/LIAM-LINKEDIN" target="_blank" rel="noopener" aria-label="Liam De Saldanha on LinkedIn"><i class="bi bi-linkedin"></i></a> -->
-                <!-- <a class="github" href="https://github.com/LIAM-GITHUB" target="_blank" rel="noopener" aria-label="Liam De Saldanha on GitHub"><i class="bi bi-github"></i></a> -->
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/person/person-m-7.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Liam De Saldanha</h4>
+                <span>Team Member</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
               </div>
             </div>
-          </div>
+          </div><!-- End Team Member -->
 
-          <div data-aos="fade-up" data-aos-delay="100">
-            <div class="pdr-member">
-              <div class="pdr-avatar"><span>SZ</span></div>
-              <h3>Samukelisiwe Zwane</h3>
-              <span class="pdr-role">Team member</span>
-              <a class="pdr-email" href="mailto:zwnsam011@myuct.ac.za">zwnsam011@myuct.ac.za</a>
-              <div class="pdr-social">
-                <!-- <a class="linkedin" href="https://www.linkedin.com/in/SAMUKELISIWE-LINKEDIN" target="_blank" rel="noopener" aria-label="Samukelisiwe Zwane on LinkedIn"><i class="bi bi-linkedin"></i></a> -->
-                <!-- <a class="github" href="https://github.com/SAMUKELISIWE-GITHUB" target="_blank" rel="noopener" aria-label="Samukelisiwe Zwane on GitHub"><i class="bi bi-github"></i></a> -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/person/person-f-8.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Samukelisiwe Zwane</h4>
+                <span>Team Member</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="social">
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
               </div>
             </div>
-          </div>
+          </div><!-- End Team Member -->
 
-          <div data-aos="fade-up" data-aos-delay="200">
-            <div class="pdr-member">
-              <div class="pdr-avatar"><span>NM</span></div>
-              <h3>Nikita Martin</h3>
-              <span class="pdr-role">Team member</span>
-              <a class="pdr-email" href="mailto:mrtnik003@myuct.ac.za">mrtnik003@myuct.ac.za</a>
-              <div class="pdr-social">
-                <!-- <a class="linkedin" href="https://www.linkedin.com/in/NIKITA-LINKEDIN" target="_blank" rel="noopener" aria-label="Nikita Martin on LinkedIn"><i class="bi bi-linkedin"></i></a> -->
-                <a class="github" href="https://github.com/Kita-m17" target="_blank" rel="noopener" aria-label="Nikita Martin on GitHub"><i class="bi bi-github"></i></a>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/person/person-f-4.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Nikita Martin</h4>
+                <span>Team Member</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
               </div>
             </div>
-          </div>
+          </div><!-- End Team Member -->
 
-          <div data-aos="fade-up" data-aos-delay="300">
-            <div class="pdr-member sup">
-              <div class="pdr-avatar"><span>TM</span></div>
-              <h3>Prof. Tommie Meyer</h3>
-              <span class="pdr-role">Supervisor</span>
-              <a class="pdr-email" href="mailto:tmeyer@cair.org.za">tmeyer@cair.org.za</a>
-              <div class="pdr-social">
-                <!-- <a class="linkedin" href="https://www.linkedin.com/in/TOMMIE-LINKEDIN" target="_blank" rel="noopener" aria-label="Prof. Tommie Meyer on LinkedIn"><i class="bi bi-linkedin"></i></a> -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/person/person-m-6.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Prof. Tommie Meyer</h4>
+                <span>Supervisor</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
               </div>
             </div>
-          </div>
+          </div><!-- End Team Member -->
 
         </div>
+
       </div>
 
     </section><!-- /Team Section -->
-    
 
-    <!-- Documents Section -->
-    <section id="documents" class="pdr-documents section">
+    <!-- Faq 2 Section -->
+    <section id="faq-2" class="faq-2 section light-background">
 
-      <div class="container section-head text-center" data-aos="fade-up">
-        <span class="section-eyebrow">Documents</span>
-        <h2>Papers &amp; resources</h2>
-      </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="pdr-res-buttons" data-aos="fade-up">
 
-          <!-- Literature reviews -->
-          <div class="dropdown">
-            <button class="pdr-res-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-journal-text"></i> Literature Reviews
-            </button>
-            <ul class="dropdown-menu pdr-res-menu">
-              <li><a class="dropdown-item" href="../documents/PDR_Nikita_LR.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Nikita Martin</span></a></li>
-              <li><a class="dropdown-item" href="../documents/PDR_Samukelisiwe_LR.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Samukelisiwe Zwane</span></a></li>
-              <li><a class="dropdown-item" href="../documents/PDR_Liam_LR.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Liam De Saldanha</span></a></li>
-            </ul>
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
           </div>
-
-          <!-- Final papers -->
-          <div class="dropdown">
-            <button class="pdr-res-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-file-earmark-text"></i> Final Papers
-            </button>
-            <ul class="dropdown-menu pdr-res-menu">
-              <li><a class="dropdown-item" href="../documents/PDR_Liam_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Rational Closure<small>Nikita Martin</small></span></a></li>
-              <li><a class="dropdown-item" href="../documents/PDR_Nikita_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Lexicographic Closure<small>Samukelisiwe Zwane</small></span></a></li>
-              <li><a class="dropdown-item" href="../documents/PDR_Samukelisiwe_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Relevant Closure<small>Liam De Saldanha</small></span></a></li>
-            </ul>
-          </div>
-
-          <!-- Source code: download + GitHub in one -->
-          <div class="dropdown">
-            <button class="pdr-res-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-code-slash"></i> Source Code
-            </button>
-            <ul class="dropdown-menu pdr-res-menu">
-              <li><a class="dropdown-item" href="code/PDR_Tool.zip" download><i class="bi bi-file-earmark-zip"></i><span>Download source (.zip)<small>Submitted version</small></span></a></li>
-              <li><a class="dropdown-item" href="https://github.com/Kita-m17/PDR_Tool" target="_blank" rel="noopener"><i class="bi bi-github"></i><span>View on GitHub<small>Latest version</small></span></a></li>
-            </ul>
-          </div>
-
-          <a class="pdr-res-btn" href="../documents/Project_Proposal.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-richtext"></i> Project Proposal</a>
-          <a class="pdr-res-btn" href="../documents/PDR_Poster_submitted.pdf" target="_blank" rel="noopener"><i class="bi bi-easel"></i> Project Poster</a>
 
         </div>
+
       </div>
 
-    </section><!-- /Documents Section -->
+    </section><!-- /Faq 2 Section -->
   </main>
 
   <footer id="footer" class="footer">

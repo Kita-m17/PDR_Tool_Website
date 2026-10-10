@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PDR Tool | Explaining Defeasible Reasoning</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Feb 22 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img class="logo-white" src="assets/img/logo.svg" alt="">
+
+        <h1 class="sitename">PDR</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#background">Background</a></li>
+          <li><a href="#aims">Aims</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#rationalclosure">Rational Closure</a></li>
+          <li><a href="#lexicoclosure">Lexicographic Closure</a></li>
+          <li><a href="#relevantclosure">Relevant Closure</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="#overview">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero hero-bg-photo section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-8 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Pedagogical Tool for <span class="accent">Defeasible Reasoning</span></h1>
+            
+            <p class="hero-description text-size-small">
+              An interactive learning environment to explore defeasible reasoning
+              algorithms through step-by-step explanations, visualisations,
+              and examples.
+            </p>
+
+            <p class="typed-line">
+              <span class="prompt">&gt;</span> step through <span id="typed">Rational Closure</span><span class="caret"></span>
+            </p>
+
+            <div class="d-flex">
+              <a href="#overview" class="btn-get-started">Get Started</a>
+              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#overview" class="scroll-cue" aria-label="Scroll down"></a>
+
+    </section><!-- /Hero Section -->
+
+        <!-- Overview Section -->
+    <section id="overview" class="overview section">
+
+      <div class="container">
+        <div class="row gy-5 align-items-center">
+
+          <!-- Left: text + stat cards -->
+          <div class="col-lg-7">
+
+            <div class="section-head" data-aos="fade-up">
+              <span class="section-eyebrow">Overview</span>
+              <h2>A debugger for defeasible reasoning</h2>
+            </div>
+
+            <p data-aos="fade-up" data-aos-delay="100">
+              The PDR Tool explains defeasible reasoning algorithms by letting you <strong>step through each algorithm's process</strong>.
+              Every step comes with an explanation and a visualisation of what is happening in the background, rather than just the final answer.
+            </p>
+
+            <p data-aos="fade-up" data-aos-delay="150">
+              Enter your own <strong>knowledge base and query</strong>, choose an algorithm, and move forwards and backwards through its
+              execution, the same way you would with a debugger.
+            </p>
+
+            <div class="overview-stats">
+              <div class="overview-stat" data-aos="fade-up" data-aos-delay="200">
+                <b class="count" data-count="3">3</b>
+                <span>closure algorithms: Rational, Lexicographic and Relevant</span>
+              </div>
+              <div class="overview-stat" data-aos="fade-up" data-aos-delay="300">
+                <b class="count" data-count="4">4</b>
+                <span>learning aids: comparison, drowning problem, tutorial, glossary</span>
+              </div>
+              <div class="overview-stat" data-aos="fade-up" data-aos-delay="400">
+                <b class="count" data-count="3">3</b>
+                <span>evaluation methods, from unit tests to user feedback</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: animated trace window -->
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="trace" id="trace" aria-label="Animated preview of a Rational Closure trace">
+
+              <div class="trace-top">
+                <div class="trace-lights"><i></i><i></i><i></i></div>
+                <span>trace &mdash; rational_closure</span>
+                <span class="trace-status" id="traceStatus"><i></i><em>running</em></span>
+              </div>
+
+              <div class="trace-code">
+                <div class="trace-cursor"></div>
+                <div class="ln" data-ranks="4" data-note="Birds fly. Birds have wings. Penguins are birds. Penguins don't fly."><span class="lno">1</span><span class="mark"></span><span class="code"><span class="k">load</span> 4 rules about birds &amp; penguins</span></div>
+                <div class="ln" data-ranks="4" data-note="This is the question we want the algorithm to answer."><span class="lno">2</span><span class="mark"></span><span class="code"><span class="k">ask</span> do penguins have wings?</span></div>
+                <div class="ln" data-ranks="4" data-note="Rules about all birds are general. The penguin rule is more specific, so it takes priority."><span class="lno">3</span><span class="mark"></span><span class="code"><span class="k">sort</span> rules: general <span class="s">&rarr;</span> specific</span></div>
+                <div class="ln bp" data-ranks="4" data-note="Breakpoint: a penguin is a bird, so it would have to both fly and not fly."><span class="lno">4</span><span class="mark"></span><span class="code"><span class="k">clash!</span> birds fly <span class="bad">&#10007;</span> penguins don't</span></div>
+                <div class="ln" data-ranks="2" data-note="Rational Closure throws out every general bird rule at once, including &quot;birds have wings&quot;."><span class="lno">5</span><span class="mark"></span><span class="code"><span class="k">drop</span> all the general bird rules</span></div>
+                <div class="ln" data-ranks="2" data-note="Nothing left says penguins have wings. They were thrown out with &quot;birds fly&quot;: the drowning problem."><span class="lno">6</span><span class="mark"></span><span class="code"><span class="k">answer</span> penguins have wings? <span class="bad">&#10007; no</span></span></div>
+              </div>
+
+              <div class="trace-watch">
+                <div><small>STEP</small><b id="traceStep">6 / 6</b></div>
+                <div><small>RULES KEPT</small><b id="traceRanks">2</b></div>
+                <div><small>QUESTION</small><b>do penguins have wings?</b></div>
+              </div>
+
+              <div class="trace-note" id="traceNote"><span>Rational Closure drops all of rank 0, so the wings drown with it.</span></div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Overview Section -->
+
+    <!-- Background Section -->
+    <section id="background" class="background section light-background">
+
+      <div class="container section-head" data-aos="fade-up">
+        <span class="section-eyebrow">Background</span>
+        <h2>From classical logic to defeasible reasoning</h2>
+      </div>
+
+      <div class="container">
+
+        <!-- One box: propositional logic, classical reasoning, defeasible reasoning -->
+        <div class="background-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+
+            <div class="col-lg-4 background-topic">
+              <i class="bi bi-braces topic-icon"></i>
+              <h4>Propositional logic</h4>
+              <p>Propositional logic represents knowledge using simple statements called <em>atoms</em>, such as <em>platypus</em> ("is a platypus") or <em>hat</em> ("wears a hat"), joined by connectives like &not; (not), &and; (and), &or; (or) and &rarr; (implies). A knowledge base is a set of these statements.</p>
+              <p class="topic-example"><span>e.g.</span> perry &rarr; platypus means "Perry is a platypus".</p>
+            </div>
+
+            <div class="col-lg-4 background-topic">
+              <i class="bi bi-lock topic-icon"></i>
+              <h4>Classical reasoning</h4>
+              <p>A conclusion is entailed when it is true in every situation where the knowledge base is true. Classical reasoning is <strong>monotonic</strong>: adding new information can never take a conclusion back, so it cannot handle exceptions.</p>
+              <p class="topic-example"><span>e.g.</span> If platypuses never wear hats but Perry does, the only consistent answer is that Perry doesn't exist.</p>
+            </div>
+
+            <div class="col-lg-4 background-topic">
+              <i class="bi bi-signpost-split topic-icon"></i>
+              <h4>Defeasible reasoning</h4>
+              <p>Defeasible reasoning adds "typically", written &alpha; |&sim; &beta;. Conclusions are tentative and can be overridden by more specific information. The KLM framework (Kraus, Lehmann and Magidor, 1990) gives it a formal foundation.</p>
+              <p class="topic-example"><span>e.g.</span> platypus |&sim; &not;hat and perry |&sim; hat: Perry is simply an exceptional platypus.</p>
+            </div>
+
+            <!-- Perry example: no hat -> hat -->
+            <div class="perry-strip">
+              <figure class="perry-fig">
+                <img src="assets/img/perry-plain.svg" alt="Perry the platypus without a hat">
+                <figcaption><code>platypus |&sim; &not;hat</code><span>Platypuses typically don't wear hats</span></figcaption>
+              </figure>
+
+              <div class="perry-arrow">
+                <img src="assets/img/perry-hat-only.svg" alt="" class="perry-hat">
+                <i class="bi bi-arrow-right"></i>
+                <span>but</span>
+              </div>
+
+              <figure class="perry-fig">
+                <img src="assets/img/perry.svg" alt="Perry the platypus wearing his hat">
+                <figcaption><code>perry |&sim; hat</code><span>Perry typically does</span></figcaption>
+              </figure>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- The three algorithms -->
+        <h3 class="background-sub" data-aos="fade-up">The three algorithms</h3>
+
+        <div class="row gy-4 services">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-layers"></i></div>
+              <h4>Rational Closure</h4>
+              <p>Ranks statements from most general to most specific, then removes whole ranks until the conflict is gone. Simple and cautious, but it can remove unrelated information too: the <strong>drowning problem</strong>.</p>
+              <span class="algo-cite">Lehmann &amp; Magidor, 1992</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-sliders"></i></div>
+              <h4>Lexicographic Closure</h4>
+              <p>Builds on Rational Closure, but instead of removing a whole rank it tries smaller and smaller groups of its statements, and keeps the largest ones that no longer cause a conflict. This "weakens" the rank rather than discarding it.</p>
+              <span class="algo-cite">Lehmann, 1995</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-bullseye"></i></div>
+              <h4>Relevant Closure</h4>
+              <p>Finds the statements that are actually responsible for the conflict (its justifications) and only removes those.</p>
+              <span class="algo-cite">Casini, Meyer, Moodley &amp; Nortj&eacute;, 2014</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Background Section -->
+
+    <!-- Aims Section -->
+    <section id="aims" class="pdr-aims work-process section">
+
+      <div class="container section-head" data-aos="fade-up">
+        <span class="section-eyebrow">Aims</span>
+        <h2>Project Aims</h2>
+        <p>PDR is built to help students understand how defeasible reasoning algorithms reach their conclusions, not just what they conclude.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/aims/perry-magnify.webp" alt="Perry inspecting a page with a magnifying glass" class="img-fluid" loading="lazy">
+              </div>
+
+              <div class="steps-content">
+                <div class="steps-number">01</div>
+                <h3>Make the reasoning visible</h3>
+                <p>Let learners step through Rational, Lexicographic and Relevant Closure one step at a time, like a debugger, instead of only seeing the final answer.</p>
+                <div class="steps-features">
+
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Step forward and back</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Ranks built one at a time</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>See which statements are removed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/aims/perry-laptop.webp" alt="Perry working on a laptop" class="img-fluid" loading="lazy">
+              </div>
+
+              <div class="steps-content">
+                <div class="steps-number">02</div>
+                <h3>Explain every step</h3>
+                <p>Pair each step with a plain-language explanation and the matching line of pseudocode, so it is always clear what the algorithm is doing and why.</p>
+                <div class="steps-features">
+                  
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Plain-language explanations</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Highlighted pseudocode</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Justifications on demand</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/aims/perry-compare.webp" alt="Perry comparing three pages" class="img-fluid" loading="lazy">
+              </div>
+
+              <div class="steps-content">
+                <div class="steps-number">03</div>
+                <h3>Show how the algorithms differ</h3>
+                <p>Run the same knowledge base and query through each algorithm side by side, making differences like the drowning problem easy to see.</p>
+                
+                <div class="steps-features">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Same query, three algorithms</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Results side by side</span>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>The drowning problem in action</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Aims Section -->
+
+    <!-- Key Features Section -->
+    <section id="features" class="pdr-features section light-background">
+      <div class="container">
+
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Key Features</span>
+          <h2>What you can do with PDR</h2>
+        </div>
+
+        <div class="row gy-4 services">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-skip-forward"></i></div>
+              <h4>Step-through execution</h4>
+              <p>Move forward and back through each algorithm one step at a time.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-bar-chart-steps"></i></div>
+              <h4>BaseRank view</h4>
+              <p>Watch the knowledge base split into ranks, from most general to most specific.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-diagram-3"></i></div>
+              <h4>Three closures</h4>
+              <p>Rational, Lexicographic and Relevant Closure, all in one tool.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-code-square"></i></div>
+              <h4>Pseudocode tracking</h4>
+              <p>The current line of pseudocode is highlighted alongside each explanation.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-layout-split"></i></div>
+              <h4>Comparison mode</h4>
+              <p>Run one query through every algorithm and compare the results side by side.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <h4>Justifications</h4>
+              <p>Open "Show Details" to see exactly which statements cause a conflict.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-input-cursor-text"></i></div>
+              <h4>Your own examples</h4>
+              <p>Enter any knowledge base and query, with syntax checking as you type.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-book"></i></div>
+              <h4>Tutorial &amp; glossary</h4>
+              <p>A guided tutorial and glossary of key terms for first-time users.</p>
+            </div>
+          </div>
+
+        </div>
+    </section><!-- /Key Features Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="assets/img/illustration/illustration-10.webp" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="skills-content skills-animation">
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Work Process Section -->
+    <section id="work-process" class="work-process section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Work Process</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/steps-1.webp" alt="Step 1" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">01</div>
+                <h3>Research &amp; Analysis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+                <div class="steps-features">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Market Research</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Data Analysis</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>User Feedback</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/steps-2.webp" alt="Step 2" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">02</div>
+                <h3>Design &amp; Planning</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                <div class="steps-features">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Wireframing</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>UI/UX Design</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Prototyping</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/steps-3.webp" alt="Step 3" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">03</div>
+                <h3>Development &amp; Launch</h3>
+                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
+                <div class="steps-features">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Development</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Testing</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle"></i>
+                    <span>Deployment</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Work Process Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action cta-perry section dark-background">
+
+      <img src="assets/img/Moonlit Platypus Spy Mission.png" alt="">
+
+      <div class="container">
+        <div class="row align-items-center gy-4" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-lg-8 text-center text-lg-start">
+            <span class="cta-eyebrow">Try it yourself</span>
+            <h3>See defeasible reasoning, one step at a time</h3>
+            <p>The PDR Tool is on GitHub. Clone the repository, run it locally, and step through exactly how each algorithm reaches its answer.</p>
+            <a class="cta-btn" href="https://github.com/Kita-m17/PDR_Tool" target="_blank" rel="noopener"><i class="bi bi-github"></i> View on GitHub <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-4 text-center">
+            <a class="cta-qr" href="https://github.com/Kita-m17/PDR_Tool" target="_blank" rel="noopener">
+              <img src="assets/img/pdr-github-qr.png" alt="QR code linking to the PDR Tool on GitHub">
+              <span>Scan to open on GitHub</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Call To Action Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="pdr-team section light-background">
+
+      <div class="container section-head" data-aos="fade-up">
+        <span class="section-eyebrow">Team</span>
+        <h2>The people behind PDR</h2>
+      </div>
+
+      <div class="container">
+        <div class="pdr-team-grid">
+
+          <div data-aos="fade-up">
+            <div class="pdr-member">
+              <div class="pdr-avatar"><span>LD</span></div>
+              <h3>Liam De Saldanha</h3>
+              <span class="pdr-role">Team member</span>
+              <a class="pdr-email" href="mailto:dsllia002@myuct.ac.za">dsllia002@myuct.ac.za</a>
+              <div class="pdr-social">
+                <a class="linkedin" href="https://www.linkedin.com/in/liamdesaldanha/" target="_blank" rel="noopener" aria-label="Liam De Saldanha on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a class="github" href="https://github.com/LiamDeSaldanha" target="_blank" rel="noopener" aria-label="Liam De Saldanha on GitHub"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100">
+            <div class="pdr-member">
+              <div class="pdr-avatar"><span>SZ</span></div>
+              <h3>Samukelisiwe Zwane</h3>
+              <span class="pdr-role">Team member</span>
+              <a class="pdr-email" href="mailto:zwnsam011@myuct.ac.za">zwnsam011@myuct.ac.za</a>
+              <div class="pdr-social">
+                <a class="linkedin" href="https://www.linkedin.com/in/samukelisiwe-zwane-729411292/" target="_blank" rel="noopener" aria-label="Samukelisiwe Zwane on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a class="github" href="https://github.com/samukelisiwezwane" target="_blank" rel="noopener" aria-label="Samukelisiwe Zwane on GitHub"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="200">
+            <div class="pdr-member">
+              <div class="pdr-avatar"><span>NM</span></div>
+              <h3>Nikita Martin</h3>
+              <span class="pdr-role">Team member</span>
+              <a class="pdr-email" href="mailto:mrtnik003@myuct.ac.za">mrtnik003@myuct.ac.za</a>
+              <div class="pdr-social">
+                <a class="linkedin" href="https://www.linkedin.com/in/nikita-martin-17905630a/" target="_blank" rel="noopener" aria-label="Nikita Martin on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a class="github" href="https://github.com/Kita-m17" target="_blank" rel="noopener" aria-label="Nikita Martin on GitHub"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="300">
+            <div class="pdr-member sup">
+              <div class="pdr-avatar"><span>TM</span></div>
+              <h3>Prof. Tommie Meyer</h3>
+              <span class="pdr-role">Supervisor</span>
+              <a class="pdr-email" href="mailto:tmeyer@cair.org.za">tmeyer@cair.org.za</a>
+              <div class="pdr-social">
+                <!-- <a class="linkedin" href="https://www.linkedin.com/in/TOMMIE-LINKEDIN" target="_blank" rel="noopener" aria-label="Prof. Tommie Meyer on LinkedIn"><i class="bi bi-linkedin"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Team Section -->
+    
+
+    <!-- Documents Section -->
+    <section id="documents" class="pdr-documents section">
+
+      <div class="container section-head text-center" data-aos="fade-up">
+        <span class="section-eyebrow">Documents</span>
+        <h2>Papers &amp; resources</h2>
+      </div>
+
+      <div class="container">
+        <div class="pdr-res-buttons" data-aos="fade-up">
+
+          <!-- Literature reviews -->
+          <div class="dropdown">
+            <button class="pdr-res-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-journal-text"></i> Literature Reviews
+            </button>
+            <ul class="dropdown-menu pdr-res-menu">
+              <li><a class="dropdown-item" href="documents/PDR_Nikita_LR.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Nikita Martin</span></a></li>
+              <li><a class="dropdown-item" href="documents/PDR_Samukelisiwe_LR.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Samukelisiwe Zwane</span></a></li>
+              <li><a class="dropdown-item" href="documents/PDR_Liam_LR.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Liam De Saldanha</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Final papers -->
+          <div class="dropdown">
+            <button class="pdr-res-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-file-earmark-text"></i> Final Papers
+            </button>
+            <ul class="dropdown-menu pdr-res-menu">
+              <li><a class="dropdown-item" href="documents/PDR_Liam_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Rational Closure<small>Nikita Martin</small></span></a></li>
+              <li><a class="dropdown-item" href="documents/PDR_Nikita_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Lexicographic Closure<small>Samukelisiwe Zwane</small></span></a></li>
+              <li><a class="dropdown-item" href="documents/PDR_Samukelisiwe_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i><span>Relevant Closure<small>Liam De Saldanha</small></span></a></li>
+            </ul>
+          </div>
+
+          <!-- Source code: download + GitHub in one -->
+          <div class="dropdown">
+            <button class="pdr-res-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-code-slash"></i> Source Code
+            </button>
+            <ul class="dropdown-menu pdr-res-menu">
+              <li><a class="dropdown-item" href="source_code/PDR_Tool-main.zip" download><i class="bi bi-file-earmark-zip"></i><span>Download source (.zip)<small>Submitted version</small></span></a></li>
+              <li><a class="dropdown-item" href="https://github.com/Kita-m17/PDR_Tool" target="_blank" rel="noopener"><i class="bi bi-github"></i><span>View on GitHub<small>Latest version</small></span></a></li>
+            </ul>
+          </div>
+
+          <a class="pdr-res-btn" href="documents/Project_Proposal.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-richtext"></i> Project Proposal</a>
+          <a class="pdr-res-btn" href="documents/PDR_Poster_submitted.pdf" target="_blank" rel="noopener"><i class="bi bi-easel"></i> Project Poster</a>
+
+        </div>
+      </div>
+
+    </section><!-- /Documents Section -->
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Arsha</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <!-- <p>© <span>2026 PDR | University of Cape Town.</span> <span>All Rights Reserved</span></p> -->
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
