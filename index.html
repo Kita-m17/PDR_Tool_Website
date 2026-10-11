@@ -54,28 +54,10 @@
           <li><a href="#background">Background</a></li>
           <li><a href="#aims">Aims</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#rationalclosure">Rational Closure</a></li>
-          <li><a href="#lexicoclosure">Lexicographic Closure</a></li>
-          <li><a href="#relevantclosure">Relevant Closure</a></li>
+          <li><a href="#contributions">Contributions</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#documents">Documents</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
+          <li><a href="#documents">Resources</a></li>
+          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -112,84 +94,43 @@
           </div>
         </div>
       </div>
-
-      <a href="#overview" class="scroll-cue" aria-label="Scroll down"></a>
-
     </section><!-- /Hero Section -->
 
-        <!-- Overview Section -->
+    <!-- Overview Section -->
     <section id="overview" class="overview section">
 
       <div class="container">
-        <div class="row gy-5 align-items-center">
 
-          <!-- Left: text + stat cards -->
-          <div class="col-lg-7">
-
-            <div class="section-head" data-aos="fade-up">
-              <span class="section-eyebrow">Overview</span>
-              <h2>A debugger for defeasible reasoning</h2>
-            </div>
-
-            <p data-aos="fade-up" data-aos-delay="100">
-              The PDR Tool explains defeasible reasoning algorithms by letting you <strong>step through each algorithm's process</strong>.
-              Every step comes with an explanation and a visualisation of what is happening in the background, rather than just the final answer.
-            </p>
-
-            <p data-aos="fade-up" data-aos-delay="150">
-              Enter your own <strong>knowledge base and query</strong>, choose an algorithm, and move forwards and backwards through its
-              execution, the same way you would with a debugger.
-            </p>
-
-            <div class="overview-stats">
-              <div class="overview-stat" data-aos="fade-up" data-aos-delay="200">
-                <b class="count" data-count="3">3</b>
-                <span>closure algorithms: Rational, Lexicographic and Relevant</span>
-              </div>
-              <div class="overview-stat" data-aos="fade-up" data-aos-delay="300">
-                <b class="count" data-count="4">4</b>
-                <span>learning aids: comparison, drowning problem, tutorial, glossary</span>
-              </div>
-              <div class="overview-stat" data-aos="fade-up" data-aos-delay="400">
-                <b class="count" data-count="3">3</b>
-                <span>evaluation methods, from unit tests to user feedback</span>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Right: animated trace window -->
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="trace" id="trace" aria-label="Animated preview of a Rational Closure trace">
-
-              <div class="trace-top">
-                <div class="trace-lights"><i></i><i></i><i></i></div>
-                <span>trace &mdash; rational_closure</span>
-                <span class="trace-status" id="traceStatus"><i></i><em>running</em></span>
-              </div>
-
-              <div class="trace-code">
-                <div class="trace-cursor"></div>
-                <div class="ln" data-ranks="4" data-note="Birds fly. Birds have wings. Penguins are birds. Penguins don't fly."><span class="lno">1</span><span class="mark"></span><span class="code"><span class="k">load</span> 4 rules about birds &amp; penguins</span></div>
-                <div class="ln" data-ranks="4" data-note="This is the question we want the algorithm to answer."><span class="lno">2</span><span class="mark"></span><span class="code"><span class="k">ask</span> do penguins have wings?</span></div>
-                <div class="ln" data-ranks="4" data-note="Rules about all birds are general. The penguin rule is more specific, so it takes priority."><span class="lno">3</span><span class="mark"></span><span class="code"><span class="k">sort</span> rules: general <span class="s">&rarr;</span> specific</span></div>
-                <div class="ln bp" data-ranks="4" data-note="Breakpoint: a penguin is a bird, so it would have to both fly and not fly."><span class="lno">4</span><span class="mark"></span><span class="code"><span class="k">clash!</span> birds fly <span class="bad">&#10007;</span> penguins don't</span></div>
-                <div class="ln" data-ranks="2" data-note="Rational Closure throws out every general bird rule at once, including &quot;birds have wings&quot;."><span class="lno">5</span><span class="mark"></span><span class="code"><span class="k">drop</span> all the general bird rules</span></div>
-                <div class="ln" data-ranks="2" data-note="Nothing left says penguins have wings. They were thrown out with &quot;birds fly&quot;: the drowning problem."><span class="lno">6</span><span class="mark"></span><span class="code"><span class="k">answer</span> penguins have wings? <span class="bad">&#10007; no</span></span></div>
-              </div>
-
-              <div class="trace-watch">
-                <div><small>STEP</small><b id="traceStep">6 / 6</b></div>
-                <div><small>RULES KEPT</small><b id="traceRanks">2</b></div>
-                <div><small>QUESTION</small><b>do penguins have wings?</b></div>
-              </div>
-
-              <div class="trace-note" id="traceNote"><span>Rational Closure drops all of rank 0, so the wings drown with it.</span></div>
-
-            </div>
-          </div>
-
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Overview</span>
+          <h2>A debugger for defeasible reasoning</h2>
         </div>
+
+        <div class="overview-abstract">
+          <p data-aos="fade-up" data-aos-delay="100">
+            Defeasible reasoning lets conclusions change when more specific information arrives, which makes it possible to handle exceptions. But the algorithms behind it are complex, and existing reasoners are built for researchers and only report the final answer.
+          </p>
+
+          <p data-aos="fade-up" data-aos-delay="150">
+            <strong>PDR-Tool</strong> works like a debugger for defeasible reasoning. Enter a knowledge base and a query, then step through Rational, Lexicographic, Basic Relevant and Minimal Relevant Closure, with the formal definition and a plain-English explanation at every step.
+          </p>
+        </div>
+
+        <div class="overview-stats">
+          <div class="overview-stat" data-aos="fade-up" data-aos-delay="200">
+            <b class="count" data-count="4">4</b>
+            <span>algorithms: Rational, Lexicographic, Basic and Minimal Relevant Closure</span>
+          </div>
+          <div class="overview-stat" data-aos="fade-up" data-aos-delay="300">
+            <b class="count" data-count="4">4</b>
+            <span>learning aids: comparison, drowning problem, tutorial, glossary</span>
+          </div>
+          <div class="overview-stat" data-aos="fade-up" data-aos-delay="400">
+            <b class="count" data-count="3">3</b>
+            <span>ways we checked it: worked examples, existing tools and expert feedback</span>
+          </div>
+        </div>
+
       </div>
     </section><!-- /Overview Section -->
 
@@ -207,21 +148,16 @@
         <div class="background-box" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
 
-            <div class="col-lg-4 background-topic">
-              <i class="bi bi-braces topic-icon"></i>
-              <h4>Propositional logic</h4>
-              <p>Propositional logic represents knowledge using simple statements called <em>atoms</em>, such as <em>platypus</em> ("is a platypus") or <em>hat</em> ("wears a hat"), joined by connectives like &not; (not), &and; (and), &or; (or) and &rarr; (implies). A knowledge base is a set of these statements.</p>
-              <p class="topic-example"><span>e.g.</span> perry &rarr; platypus means "Perry is a platypus".</p>
-            </div>
-
-            <div class="col-lg-4 background-topic">
+            
+            <div class="col-lg-6 background-topic">
               <i class="bi bi-lock topic-icon"></i>
-              <h4>Classical reasoning</h4>
-              <p>A conclusion is entailed when it is true in every situation where the knowledge base is true. Classical reasoning is <strong>monotonic</strong>: adding new information can never take a conclusion back, so it cannot handle exceptions.</p>
+              <h4>Classical logic</h4>
+              <p>Knowledge is written in propositional logic: simple statements called <em>atoms</em>, such as <em>platypus</em> or <em>hat</em>, joined by &not; (not), &and; (and), &or; (or) and &rarr; (implies). A conclusion follows when it is true in every situation where the knowledge base is true.</p>
+              <p>Classical reasoning is <strong>monotonic</strong>: adding new information can never take a conclusion back, so it cannot handle exceptions.</p>
               <p class="topic-example"><span>e.g.</span> If platypuses never wear hats but Perry does, the only consistent answer is that Perry doesn't exist.</p>
             </div>
 
-            <div class="col-lg-4 background-topic">
+            <div class="col-lg-6 background-topic">
               <i class="bi bi-signpost-split topic-icon"></i>
               <h4>Defeasible reasoning</h4>
               <p>Defeasible reasoning adds "typically", written &alpha; |&sim; &beta;. Conclusions are tentative and can be overridden by more specific information. The KLM framework (Kraus, Lehmann and Magidor, 1990) gives it a formal foundation.</p>
@@ -288,13 +224,13 @@
 
     </section><!-- /Background Section -->
 
-    <!-- Aims Section -->
+        <!-- Aims Section -->
     <section id="aims" class="pdr-aims work-process section">
 
       <div class="container section-head" data-aos="fade-up">
         <span class="section-eyebrow">Aims</span>
         <h2>Project Aims</h2>
-        <p>PDR is built to help students understand how defeasible reasoning algorithms reach their conclusions, not just what they conclude.</p>
+        <p>For each algorithm (Rational, Lexicographic, Basic Relevant and Minimal Relevant Closure), PDR aims to make the reasoning visible, explain it, and show how it differs from the others.</p>
       </div>
 
       <div class="container">
@@ -305,26 +241,22 @@
               <div class="steps-image">
                 <img src="assets/img/aims/perry-magnify.webp" alt="Perry inspecting a page with a magnifying glass" class="img-fluid" loading="lazy">
               </div>
-
               <div class="steps-content">
                 <div class="steps-number">01</div>
-                <h3>Make the reasoning visible</h3>
-                <p>Let learners step through Rational, Lexicographic and Relevant Closure one step at a time, like a debugger, instead of only seeing the final answer.</p>
+                <h3>Visualise the algorithm</h3>
+                <p>Show every intermediate step of the algorithm, not just the final answer, so learners can see exactly how a conclusion is reached.</p>
                 <div class="steps-features">
-
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
-                    <span>Step forward and back</span>
+                    <span>Step forward and back, like a debugger</span>
                   </div>
-
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
-                    <span>Ranks built one at a time</span>
+                    <span>See how statements are ranked</span>
                   </div>
-
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
-                    <span>See which statements are removed</span>
+                    <span>See which statements are removed, and when</span>
                   </div>
                 </div>
               </div>
@@ -336,23 +268,19 @@
               <div class="steps-image">
                 <img src="assets/img/aims/perry-laptop.webp" alt="Perry working on a laptop" class="img-fluid" loading="lazy">
               </div>
-
               <div class="steps-content">
                 <div class="steps-number">02</div>
-                <h3>Explain every step</h3>
-                <p>Pair each step with a plain-language explanation and the matching line of pseudocode, so it is always clear what the algorithm is doing and why.</p>
+                <h3>Explain each step</h3>
+                <p>Pair every step with the formal definition and a plain-English explanation, so it is always clear what the algorithm is doing and why.</p>
                 <div class="steps-features">
-                  
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
-                    <span>Plain-language explanations</span>
+                    <span>Plain-English explanations</span>
                   </div>
-
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
-                    <span>Highlighted pseudocode</span>
+                    <span>The matching line of pseudocode highlighted</span>
                   </div>
-
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
                     <span>Justifications on demand</span>
@@ -367,23 +295,19 @@
               <div class="steps-image">
                 <img src="assets/img/aims/perry-compare.webp" alt="Perry comparing three pages" class="img-fluid" loading="lazy">
               </div>
-
               <div class="steps-content">
                 <div class="steps-number">03</div>
-                <h3>Show how the algorithms differ</h3>
-                <p>Run the same knowledge base and query through each algorithm side by side, making differences like the drowning problem easy to see.</p>
-                
+                <h3>Compare the algorithms</h3>
+                <p>Run the same knowledge base and query through each algorithm, so learners can see where they agree, where they differ, and why.</p>
                 <div class="steps-features">
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
-                    <span>Same query, three algorithms</span>
+                    <span>Same query, every algorithm</span>
                   </div>
-
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
                     <span>Results side by side</span>
                   </div>
-
                   <div class="feature-item">
                     <i class="bi bi-check-circle"></i>
                     <span>The drowning problem in action</span>
@@ -474,6 +398,91 @@
 
         </div>
     </section><!-- /Key Features Section -->
+
+    <!-- Contributions Section -->
+    <section id="contributions" class="pdr-contrib section">
+
+      <div class="container section-head" data-aos="fade-up">
+        <span class="section-eyebrow">Contributions</span>
+        <h2>One tool, three algorithms</h2>
+        <p>Together we built the debugger-style interface, the BaseRank ranking, the guided tutorial and the information page. Each of us then led one defeasible entailment algorithm.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="contrib-card">
+              <div class="contrib-top">
+                <span class="contrib-avatar">NM</span>
+                <div>
+                  <h3>Nikita Martin</h3>
+                  <span class="contrib-lead">Lead &middot; Rational Closure</span>
+                </div>
+              </div>
+              
+              <p class="contrib-brief">Made Rational Closure inspectable step by step, included a dedicated drowning problem example that shows the limitations of Rational Closure, and added a comparison of all three algorithms.</p>
+              
+              <h4>Contributions</h4>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Rational Closure step-through</li>
+                <li><i class="bi bi-check-circle"></i> Justifications in "Show Details"</li>
+                <li><i class="bi bi-check-circle"></i> Drowning problem example</li>
+                <li><i class="bi bi-check-circle"></i> Comparison mode</li>
+              </ul>
+
+              <a class="contrib-btn" href="rc.html">View Nikita's work <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="contrib-card">
+              <div class="contrib-top">
+                <!-- <span class="contrib-avatar">SZ</span> -->
+                <div>
+                  <h3>Samukelisiwe Zwane</h3>
+                  <span class="contrib-lead">Lead &middot; Lexicographic Closure</span>
+                </div>
+              </div>
+
+              <p class="contrib-brief">Made Lexicographic Closure's rank weakening visible, showing how it keeps more information than Rational Closure.</p>
+              
+              <h4>Contributions</h4>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Lexicographic Closure step-through</li>
+                <li><i class="bi bi-check-circle"></i> Rank weakening, one subset size at a time</li>
+                <li><i class="bi bi-check-circle"></i> Every subset checked, and whether it still conflicts</li>
+                <li><i class="bi bi-check-circle"></i> Justification for the final result</li>
+              </ul>
+              <a class="contrib-btn" href="lc.html">View Samukelisiwe's work <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="contrib-card">
+              <div class="contrib-top">
+                <!-- <span class="contrib-avatar">LD</span> -->
+                <div>
+                  <h3>Liam De Saldanha</h3>
+                  <span class="contrib-lead">Lead &middot; Relevant Closure</span>
+                </div>
+              </div>
+              <p class="contrib-brief">Made Basic and Minimal Relevant Closure explainable, using justifications to show which statements are really responsible for a conflict.</p>
+              <h4>Contributions</h4>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Basic and Minimal Relevant Closure step-throughs</li>
+                <li><i class="bi bi-check-circle"></i> Justifications that build the relevance partition</li>
+                <li><i class="bi bi-check-circle"></i> Statement removal shown step by step</li>
+                <li><i class="bi bi-check-circle"></i> Unit tests from worked examples in the literature</li>
+              </ul>
+              <a class="contrib-btn" href="relc.html">View Liam's work <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Contributions Section -->
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action cta-perry section dark-background">
