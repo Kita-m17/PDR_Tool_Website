@@ -1,0 +1,418 @@
+/*--------------------------------------------------------------
+# Individual contribution pages (rc.html, lc.html, relc.html)
+# Builds on main.css: same hero, section heads and cards as index.html
+--------------------------------------------------------------*/
+
+/* ---------- hero: same photo as the home page, content centred ---------- */
+.hero.member-hero {
+  min-height: 70vh;
+  text-align: center;
+}
+
+.hero.hero-bg-photo.member-hero {
+  background-image: linear-gradient(180deg, rgba(10, 16, 20, .82) 0%, rgba(10, 16, 20, .72) 100%), url("../img/Moonlit Platypus Spy Mission.png");
+}
+
+.member-hero .container {
+  max-width: 900px;
+}
+
+.member-hero .section-eyebrow::after {
+  content: "";
+  width: 32px;
+  height: 2px;
+  background: currentColor;
+}
+
+.member-hero h1 {
+  margin: 18px 0 14px;
+  font-size: 56px;
+  line-height: 1.1;
+  color: var(--gold);
+}
+
+.member-hero .paper-title {
+  max-width: 720px;
+  margin: 0 auto 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.member-hero .email {
+  display: block;
+  margin-bottom: 34px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.member-hero .email:hover {
+  color: var(--gold);
+}
+
+.member-hero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn-gold,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 24px;
+  border-radius: 50px;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--gold-text);
+}
+
+.btn-gold:hover {
+  background: var(--gold-dark);
+  color: var(--gold-text);
+}
+
+.btn-ghost {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+
+.btn-ghost:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ---------- always-visible "back to home" button ---------- */
+.back-home {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 50px;
+  background: var(--heading-color);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.45);
+  transition: 0.3s;
+}
+
+.back-home:hover {
+  background: var(--gold);
+  color: var(--gold-text);
+}
+
+/* ---------- text ---------- */
+.member-page .section-head p {
+  max-width: 760px;
+  margin: 14px 0 0;
+  font-size: 16px;
+}
+
+.prose {
+  max-width: 900px;
+}
+
+.prose p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* research question */
+.rq-box {
+  margin-top: 26px;
+  padding: 24px 30px;
+  background: var(--surface-color);
+  border-left: 5px solid var(--gold);
+  border-radius: 0 14px 14px 0;
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.rq-box span {
+  font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+}
+
+.rq-box p {
+  margin: 8px 0 0;
+  font-family: var(--heading-font);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--heading-color);
+}
+
+/* feature cards reuse .services .service-item from main.css */
+.member-page .services {
+  margin-top: 10px;
+}
+
+.member-page .service-item p code,
+.cmp-table code,
+.prose code {
+  font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  color: var(--heading-color);
+}
+
+/* ---------- comparison table ---------- */
+.cmp-table {
+  margin-top: 26px;
+  overflow-x: auto;
+  background: var(--surface-color);
+  border-radius: 14px;
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.cmp-table table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.cmp-table th,
+.cmp-table td {
+  padding: 16px 18px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  font-size: 14.5px;
+}
+
+.cmp-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.cmp-table th {
+  font-family: var(--heading-font);
+  font-size: 15px;
+  color: var(--heading-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 93%);
+}
+
+.cmp-table .yes,
+.cmp-table .no {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cmp-table .yes { color: #158a55; }
+.cmp-table .no { color: #c8364f; }
+
+.cmp-table small {
+  display: block;
+  margin-top: 4px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+/* ---------- results ---------- */
+.check-card {
+  height: 100%;
+  padding: 28px;
+  background: var(--surface-color);
+  border-radius: 14px;
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.check-card .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 50px;
+  background: #eaf7f0;
+  color: #158a55;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.check-card .badge.gold {
+  background: color-mix(in srgb, var(--gold), transparent 82%);
+  color: var(--gold-ink);
+}
+
+.check-card .badge.blue {
+  background: color-mix(in srgb, var(--accent-color), transparent 86%);
+  color: #1f7fb5;
+}
+
+.check-card h4 {
+  margin: 14px 0 8px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.check-card p {
+  margin: 0;
+  font-size: 14.5px;
+}
+
+.check-card p + p {
+  margin-top: 10px;
+}
+
+.check-card.highlight {
+  border: 2px solid color-mix(in srgb, var(--gold), transparent 40%);
+}
+
+/* ---------- discussion ---------- */
+.disc-card {
+  height: 100%;
+  padding: 26px;
+  border-radius: 14px;
+  background: var(--surface-color);
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.disc-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.disc-card h4 i {
+  color: var(--accent-color);
+}
+
+.disc-card ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14.5px;
+}
+
+.disc-card li {
+  margin-bottom: 8px;
+}
+
+.disc-card li::marker {
+  color: var(--accent-color);
+}
+
+.conclusion-box {
+  margin-top: 30px;
+  padding: 30px 34px;
+  border-radius: 16px;
+  background: linear-gradient(160deg, #37517e 0%, #283a5a 100%);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.conclusion-box h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.conclusion-box p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+
+/* ---------- read more ---------- */
+.res-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  padding: 22px;
+  background: var(--surface-color);
+  border-radius: 14px;
+  box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 92%);
+  color: var(--default-color);
+  transition: 0.3s;
+}
+
+.res-link:hover {
+  transform: translateY(-5px);
+  color: var(--default-color);
+  box-shadow: 0 15px 30px color-mix(in srgb, var(--accent-color), transparent 85%);
+}
+
+.res-link > i {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  font-size: 22px;
+}
+
+.res-link b {
+  display: block;
+  font-size: 16px;
+  color: var(--heading-color);
+}
+
+.res-link span {
+  font-size: 13.5px;
+}
+
+.page-end {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.page-end .btn-gold i {
+  transition: transform 0.3s;
+}
+
+.page-end .btn-gold:hover i {
+  transform: translateX(-4px);
+}
+
+/* ---------- small screens ---------- */
+@media (max-width: 767px) {
+  .member-hero h1 {
+    font-size: 40px;
+  }
+
+  .member-hero .paper-title {
+    font-size: 17px;
+  }
+
+  .rq-box p {
+    font-size: 17px;
+  }
+
+  .back-home span {
+    display: none;
+  }
+
+  .back-home {
+    width: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+}

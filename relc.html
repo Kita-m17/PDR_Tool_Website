@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Relevant Closure | PDR Tool</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/member.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Feb 22 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page member-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img class="logo-white" src="assets/img/logo.svg" alt="">
+
+        <h1 class="sitename">PDR</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#overview">Overview</a></li>
+          <li><a href="index.html#background">Background</a></li>
+          <li><a href="index.html#aims">Aims</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#contributions" class="active">Contributions</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#documents">Resources</a></li>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="index.html#overview">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section id="hero" class="hero hero-bg-photo member-hero section dark-background">
+      <div class="container" data-aos="zoom-out">
+        <span class="section-eyebrow">Relevant Closure</span>
+        <h1>Liam De Saldanha</h1>
+        <p class="paper-title">Explaining Defeasible Entailments: A Relevant Closure User Interface</p>
+        <a class="email" href="mailto:dsllia002@myuct.ac.za">dsllia002@myuct.ac.za</a>
+        <div class="actions">
+          <a class="btn-gold" href="documents/PDR_Liam_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> Read the paper</a>
+          <a class="btn-ghost" href="index.html#contributions"><i class="bi bi-arrow-left"></i> Back to home</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abstract -->
+    <section id="abstract" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Abstract</span>
+          <h2>Abstract</h2>
+        </div>
+        <div class="prose" data-aos="fade-up" data-aos-delay="100">
+          <p>Defeasible reasoning is a non-monotonic reasoning approach that allows the representation of exceptional information. We use the Kraus, Lehmann and Magidor framework, an extension of propositional logic, to perform defeasible reasoning. Understanding implicit inference from defeasible information is challenging because of the complex entailment algorithms. We propose a tool called PDR-Tool, an explanatory web debugger that lets users step through the algorithms that form part of the defeasible entailment process. By explaining the internal computations of the algorithms alongside the pseudocode definitions, we lower the barrier to entry for novices. PDR-Tool builds on prior work from previous projects and research in defeasible explainability. We discuss what the current tools for defeasible explanations offer and how we iterate on these systems. Given a knowledge base and query, we allow users to navigate the entailment process. We incorporated 4 entailment algorithms: Rational, Lexicographical, Basic and Minimal Relevant Closure. This paper focuses on Basic and Minimal Relevant Closure. We validate the system's correctness through unit tests based on worked examples in the literature. The system's faithfulness to the entailment algorithm definitions is informally evaluated by experts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="introduction" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Introduction</span>
+          <h2>Only remove what causes the conflict</h2>
+        </div>
+        <div class="prose" data-aos="fade-up" data-aos-delay="100">
+          <p>Rational Closure removes whole ranks, so unrelated statements can be lost. Relevant Closure fixes this by first finding the statements that are actually responsible for the conflict (its <em>justifications</em>) and only removing those. Existing tools report the result, but don't show this process step by step, which makes it hard for beginners to see why a statement was removed.</p>
+        </div>
+        <div class="rq-box" data-aos="fade-up">
+          <span>Research question</span>
+          <p>To what extent can a step-through interface faithfully visualise and explain the internal computations of the Base Rank, relevance partition and Relevant Closure algorithms, and how efficient is this approach while maintaining correctness?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology & contribution -->
+    <section id="contribution" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Methodology &amp; contribution</span>
+          <h2>Making Relevant Closure explainable</h2>
+          <p>Basic and Minimal Relevant Closure were implemented to store their intermediate computations, so each page can step through them one iteration at a time with the matching pseudocode and an explanation. Justifications are found with Wang's hitting set tree rather than the full power set, which keeps explanations fast on larger knowledge bases. It builds on the components developed as a group, such as BaseRank and the shared step-through layout.</p>
+        </div>
+
+        <div class="row gy-4 services">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <h4>Justifications</h4>
+              <p>The Partition page steps through sets of statements, tagging each as entailed and minimal, and explains whether it is a justification. Filters show all sets, only entailed sets, or only justifications.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-diagram-2"></i></div>
+              <h4>Relevance partition</h4>
+              <p>The justifications are combined into the relevant partition, and everything else, including the classical statements, forms the irrelevant partition.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-layers"></i></div>
+              <h4>Statement removal</h4>
+              <p>The running knowledge base shrinks as relevant statements are removed rank by rank, with the sets before and after each removal. An entailed query comes with its smallest weak justification.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section id="comparison" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Comparison</span>
+          <h2>Basic, Minimal and Rational</h2>
+          <p><strong>Basic</strong> Relevant Closure treats every statement in a justification as relevant. <strong>Minimal</strong> Relevant Closure only takes the lowest-ranked statement in each justification, so it removes the most defeasible information and keeps more specific information for the final check. Both remove less than Rational Closure, as the Perry example shows:</p>
+        </div>
+
+        <div class="cmp-table" data-aos="fade-up">
+          <table>
+            <thead>
+              <tr>
+                <th>Query</th>
+                <th>Rational Closure</th>
+                <th>Basic Relevant Closure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>perry |~ bill</code></td>
+                <td><span class="no"><i class="bi bi-x-lg"></i> No</span><small>Removes all of rank 0, losing <code>platypus |~ bill</code></small></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Only removes <code>platypus |~ &not;hat</code>, the statement in the conflict, so <code>platypus |~ bill</code> remains</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluation & results -->
+    <section id="results" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Evaluation &amp; results</span>
+          <h2>Does it work?</h2>
+          <p>The tool was evaluated on correctness, performance and informal expert feedback. A formal user study was outside the scope of the project.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> Passing</span>
+              <h4>Unit tests from the literature</h4>
+              <p>JUnit tests based on worked examples from different research papers verify Base Rank, the relevance partition and Relevant Closure.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> Consistent</span>
+              <h4>Existing tools</h4>
+              <p>Existing defeasible entailment tools were also used to verify the Base Rank, partition and Relevant Closure implementations.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="check-card highlight">
+              <span class="badge gold"><i class="bi bi-bug"></i> Found an error</span>
+              <h4>A fault in an existing tool</h4>
+              <p>Testing revealed that klm-algorithms gave wrong Basic Relevant Closure answers in some cases. A manual work-through confirmed it, and the researcher was notified.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="check-card">
+              <span class="badge blue"><i class="bi bi-speedometer2"></i> Power set &rarr; hitting set tree</span>
+              <h4>Performance</h4>
+              <p>Checking every set in the power set grows at 2<sup>N</sup>, which made Relevant Closure far slower than the other algorithms. Switching to the hitting set tree, which shows a sample of sets that still includes every justification, made it competitive.</p>
+              <p>Finding the partition still takes most of the time as knowledge bases grow, which is expected.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="check-card">
+              <span class="badge gold"><i class="bi bi-chat-square-quote"></i> Expert feedback</span>
+              <h4>Clear and faithful</h4>
+              <p>Members of UCT's Knowledge Representation and Reasoning group found the explanations clear and faithful, and found no reasoning errors.</p>
+              <p>They suggested validating formulas as they're entered, so the input now checks formulas in real time with descriptive error messages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discussion & conclusion -->
+    <section id="discussion" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Discussion &amp; conclusion</span>
+          <h2>What it shows</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="disc-card">
+              <h4><i class="bi bi-lightbulb"></i> Key findings</h4>
+              <ul>
+                <li>The step-through leaves no guessing about why a statement is removed, or why a set isn't a justification.</li>
+                <li>Exposing the internal computations kept the answers correct.</li>
+                <li>The hitting set tree balances transparency with speed.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="disc-card">
+              <h4><i class="bi bi-exclamation-diamond"></i> Limitations</h4>
+              <ul>
+                <li>No formal user study, so effects on learning are not measured.</li>
+                <li>The hitting set tree shows a sample of sets, not the full power set.</li>
+                <li>The free hosting tier slows the deployed tool down.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="disc-card">
+              <h4><i class="bi bi-signpost-2"></i> Future work</h4>
+              <ul>
+                <li>Strong justifications and minimal rank establishing sets.</li>
+                <li>Justification browsing, and justifications drawn as trees or graphs.</li>
+                <li>An AI assistant for exploring modified knowledge bases, grounded in the implemented algorithms.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="conclusion-box" data-aos="fade-up">
+          <h3>Conclusion</h3>
+          <p>This work presents a step-through debugger that visualises the Base Rank, relevance partition and Relevant Closure algorithms, with natural-language explanations at each step. Its correctness was verified against examples from the literature and existing tools, which also uncovered a fault in an existing implementation. Compared with existing interfaces, it gives a more detailed and faithful view of how Relevant Closure reaches its answer, making the algorithm easier for beginners to follow.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Read more -->
+    <section id="resources" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Read more</span>
+          <h2>The full work</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a class="res-link" href="documents/PDR_Liam_FP.pdf" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-pdf"></i>
+              <div><b>Final paper</b><span>Explaining Defeasible Entailments: A Relevant Closure User Interface</span></div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a class="res-link" href="documents/PDR_Liam_LR.pdf" target="_blank" rel="noopener">
+              <i class="bi bi-journal-text"></i>
+              <div><b>Literature review</b><span>Background reading for the project</span></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="page-end" data-aos="fade-up">
+          <a class="btn-gold" href="index.html#contributions"><i class="bi bi-arrow-left"></i> Back to home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Arsha</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <!-- <p>© <span>2026 PDR | University of Cape Town.</span> <span>All Rights Reserved</span></p> -->
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Back to home (always visible) -->
+  <a href="index.html#contributions" class="back-home"><i class="bi bi-arrow-left"></i><span>Back to home</span></a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

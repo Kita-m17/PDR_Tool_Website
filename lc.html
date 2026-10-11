@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Lexicographic Closure | PDR Tool</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/member.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Feb 22 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page member-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img class="logo-white" src="assets/img/logo.svg" alt="">
+
+        <h1 class="sitename">PDR</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#overview">Overview</a></li>
+          <li><a href="index.html#background">Background</a></li>
+          <li><a href="index.html#aims">Aims</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#contributions" class="active">Contributions</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#documents">Resources</a></li>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="index.html#overview">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section id="hero" class="hero hero-bg-photo member-hero section dark-background">
+      <div class="container" data-aos="zoom-out">
+        <span class="section-eyebrow">Lexicographic Closure</span>
+        <h1>Samukelisiwe Zwane</h1>
+        <p class="paper-title">Explaining Defeasible Entailments: A Lexicographic Closure User Interface</p>
+        <a class="email" href="mailto:zwnsam011@myuct.ac.za">zwnsam011@myuct.ac.za</a>
+        <div class="actions">
+          <a class="btn-gold" href="documents/PDR_Samukelisiwe_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> Read the paper</a>
+          <a class="btn-ghost" href="index.html#contributions"><i class="bi bi-arrow-left"></i> Back to home</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abstract -->
+    <section id="abstract" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Abstract</span>
+          <h2>Abstract</h2>
+        </div>
+        <div class="prose" data-aos="fade-up" data-aos-delay="100">
+          <p>Defeasible reasoning is a form of non-monotonic reasoning that allows conclusions to be revised when new or more specific information is introduced. Lexicographic Closure is an entailment algorithm that handles these exceptions while preserving as much relevant information as possible. Existing tools often focus on the final entailment result rather than clearly showing how that result was reached. This paper presents the Lexicographic Closure component of PDR-Tool, a web-based pedagogical debugger-like tool for explaining defeasible reasoning. The tool provides a step-through interface that presents the reasoning process alongside the formal algorithm and plain-English explanations. In particular, it exposes the intermediate checks performed when Lexicographic Closure resolves conflicting information. The implementation was evaluated for correctness against existing implementations and for faithfulness by comparing the displayed steps with the reasoning performed by the backend. The results show that the tool produces the expected entailment results while providing a detailed and faithful representation of the Lexicographic Closure process.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="introduction" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Introduction</span>
+          <h2>The answer doesn't show how the rank was weakened</h2>
+        </div>
+        <div class="prose" data-aos="fade-up" data-aos-delay="100">
+          <p>When a rank conflicts with a query, Rational Closure discards the whole rank, even if only one statement causes the conflict: the drowning problem. Lexicographic Closure avoids this by testing smaller and smaller subsets of the rank and keeping as much information as possible. But its final answer says nothing about how the rank was weakened, or which information was rejected along the way.</p>
+        </div>
+        <div class="rq-box" data-aos="fade-up">
+          <span>Aim</span>
+          <p>How much of Lexicographic Closure's subset-based rank weakening can be exposed through a step-through interface, while staying faithful to the algorithm and keeping the entailment result correct?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology & contribution -->
+    <section id="contribution" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Methodology &amp; contribution</span>
+          <h2>Making rank weakening visible</h2>
+          <p>Earlier implementations test all subsets of a given size in one combined check, which gives the right answer but hides which subset worked. This reasoner checks each subset separately, recording every check (including the ones that fail) while the algorithm runs, so the step-through only ever shows what the reasoner actually did. The pseudocode follows Hamayobe's Algorithm 3.5. It builds on the components developed as a group, such as BaseRank and the shared step-through layout.</p>
+        </div>
+
+        <div class="row gy-4 services">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-sliders"></i></div>
+              <h4>Rank weakening</h4>
+              <p>A weakened rank shows its original statements struck through, with the replacement formula underneath. Each step covers one subset size, so the shrinking rank stays easy to follow.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-grid-3x3-gap"></i></div>
+              <h4>Every subset checked</h4>
+              <p>Each sub-knowledge base is listed with whether it still refutes the query's antecedent. Failed subsets are kept, so it's clear why the algorithm had to move to a smaller size.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <h4>Justification</h4>
+              <p>The final step shows the surviving knowledge base, the final entailment check, and a justification: the smallest set of surviving statements that entails the query on its own.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section id="comparison" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Comparison</span>
+          <h2>Compared with Rational Closure</h2>
+          <p>The Garfield example shows the difference. Cats are typically active, have fur and like Mondays, but Garfield is a cat who is not active and doesn't like Mondays. Does Garfield typically have fur?</p>
+        </div>
+
+        <div class="cmp-table" data-aos="fade-up">
+          <table>
+            <thead>
+              <tr>
+                <th>Query</th>
+                <th>Rational Closure</th>
+                <th>Lexicographic Closure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>garfield |~ hasFur</code></td>
+                <td><span class="no"><i class="bi bi-x-lg"></i> No</span><small>Removes all of rank 0, losing <code>cat |~ hasFur</code> with the conflicting statements</small></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Weakens rank 0 instead. The fur statement isn't part of the conflict, so it survives</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluation & results -->
+    <section id="results" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Evaluation &amp; results</span>
+          <h2>Does it work?</h2>
+          <p>The tool was evaluated on correctness, on whether the steps shown faithfully match the reasoner, on informal feedback, and on the cost of exposing every subset check.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> All matched</span>
+              <h4>Existing implementations</h4>
+              <p>Five test knowledge bases, covering cases from multiple subset sizes to an antecedent inconsistent with rank &infin;, gave the same results as Moloi's and Hamayobe's implementations.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> Matched</span>
+              <h4>Worked by hand</h4>
+              <p>Expected results were worked out from the algorithm's definition for entailments, non-entailments, no weakening, a weakened rank, and a rank removed completely.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> Passing</span>
+              <h4>Unit tests</h4>
+              <p>Cover entailed and non-entailed queries, exceptional antecedents, unsupported conclusions, the drowning problem, and specific exceptions overriding general defaults.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> Faithful</span>
+              <h4>Faithful to the reasoner</h4>
+              <p>The subsets, working knowledge base, ranking changes and highlighted pseudocode shown at each step all matched the state recorded by the reasoner.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="check-card">
+              <span class="badge blue"><i class="bi bi-cpu"></i> Up to 2<sup>n</sup> checks</span>
+              <h4>The cost of the detail</h4>
+              <p>Checking subsets one by one can take up to 2<sup>n</sup> satisfiability checks for a rank of <em>n</em> statements, compared with at most <em>n</em> for a combined check, so the tool suits small knowledge bases.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="check-card">
+              <span class="badge gold"><i class="bi bi-chat-square-quote"></i> Expert feedback</span>
+              <h4>Clear and useful</h4>
+              <p>Members of UCT's Logic-Based AI research group found the algorithm clear, and singled out the display of the sub-knowledge bases as a useful part of the interface.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discussion & conclusion -->
+    <section id="discussion" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Discussion &amp; conclusion</span>
+          <h2>What it shows</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="disc-card">
+              <h4><i class="bi bi-lightbulb"></i> Key findings</h4>
+              <ul>
+                <li>Grouping subsets by size gives enough detail to follow the weakening, without an overly long trace.</li>
+                <li>The failed subsets are part of the explanation: they show why a subset size was rejected.</li>
+                <li>The extra trace information doesn't change the final result in any tested case.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="disc-card">
+              <h4><i class="bi bi-exclamation-diamond"></i> Limitations</h4>
+              <ul>
+                <li>No formal user testing, so effects on learning are not measured.</li>
+                <li>The number of subsets grows exponentially with the size of the rank, so larger knowledge bases are slower and produce longer traces.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="disc-card">
+              <h4><i class="bi bi-signpost-2"></i> Future work</h4>
+              <ul>
+                <li>Support more defeasible entailment algorithms for comparison.</li>
+                <li>Reduce the number of subsets checked, while keeping the trace.</li>
+                <li>An AI assistant grounded in the algorithms and traces.</li>
+                <li>Natural-language input and automatic drowning-problem detection.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="conclusion-box" data-aos="fade-up">
+          <h3>Conclusion</h3>
+          <p>This work presents a step-through interface for Lexicographic Closure's rank weakening. Every subset the reasoner checks is recorded, including those that fail, and shown grouped by subset size: which subsets were considered, why a size was rejected, and how the final result was reached. The results agreed with existing implementations, and the displayed steps matched the reasoner's recorded state. The result is a faithful and more granular view of Lexicographic Closure that can support future evaluation and pedagogical tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Read more -->
+    <section id="resources" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Read more</span>
+          <h2>The full work</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a class="res-link" href="documents/PDR_Samukelisiwe_FP.pdf" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-pdf"></i>
+              <div><b>Final paper</b><span>Explaining Defeasible Entailments: A Lexicographic Closure User Interface</span></div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a class="res-link" href="documents/PDR_Samukelisiwe_LR.pdf" target="_blank" rel="noopener">
+              <i class="bi bi-journal-text"></i>
+              <div><b>Literature review</b><span>Background reading for the project</span></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="page-end" data-aos="fade-up">
+          <a class="btn-gold" href="index.html#contributions"><i class="bi bi-arrow-left"></i> Back to home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Arsha</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <!-- <p>© <span>2026 PDR | University of Cape Town.</span> <span>All Rights Reserved</span></p> -->
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Back to home (always visible) -->
+  <a href="index.html#contributions" class="back-home"><i class="bi bi-arrow-left"></i><span>Back to home</span></a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

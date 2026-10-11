@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rational Closure | PDR Tool</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/member.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Feb 22 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page member-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img class="logo-white" src="assets/img/logo.svg" alt="">
+
+        <h1 class="sitename">PDR</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#overview">Overview</a></li>
+          <li><a href="index.html#background">Background</a></li>
+          <li><a href="index.html#aims">Aims</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#contributions" class="active">Contributions</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#documents">Resources</a></li>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="index.html#overview">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section id="hero" class="hero hero-bg-photo member-hero section dark-background">
+      <div class="container" data-aos="zoom-out">
+        <span class="section-eyebrow">Rational Closure</span>
+        <h1>Nikita Martin</h1>
+        <p class="paper-title">Explaining Defeasible Entailments: A Pedagogical User Interface for Rational Closure</p>
+        <a class="email" href="mailto:mrtnik003@myuct.ac.za">mrtnik003@myuct.ac.za</a>
+        <div class="actions">
+          <a class="btn-gold" href="documents/PDR_Nikita_FP.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> Read the paper</a>
+          <a class="btn-ghost" href="index.html#contributions"><i class="bi bi-arrow-left"></i> Back to home</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abstract -->
+    <section id="abstract" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Abstract</span>
+          <h2>Abstract</h2>
+        </div>
+        <div class="prose" data-aos="fade-up" data-aos-delay="100">
+          <p>Defeasible reasoning is a form of non-monotonic reasoning that allows conclusions to be revised when new or more specific information is introduced, closely mirroring how humans reason in everyday life. Despite its growing importance in AI and knowledge representation, defeasible reasoning has not yet been widely incorporated into logic education, and existing defeasible reasoning tools provide results and explanations but offer limited support for step-by-step inspection of the intermediate computational states of the reasoning process. This paper presents a web-based explanation tool for defeasible reasoning, developed as part of a broader collaborative system that also includes Lexicographic and Relevant Closure, implemented by other group members. The tool provides a debugger-style step-through interface that exposes the BaseRank construction and Rational Closure entailment process, presenting computational states alongside plain-English explanations and formal pseudocode. A dedicated drowning problem example explains a known limitation of Rational Closure, while a comparison mode allows users to observe how Rational Closure, Lexicographic Closure, and Relevant Closure process the same knowledge base and query. A guided tutorial further supports exploration of the system. The tool is evaluated through manual verification, automated unit testing, comparison with existing implementations, comparative analysis of the supported entailment methods, execution-time observations, and informal expert feedback. The results provide evidence that the implementation behaves consistently with the theoretical algorithms and that the interface makes the intermediate reasoning process easier to inspect and interpret.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="introduction" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Introduction</span>
+          <h2>Computing an answer is not the same as understanding it</h2>
+        </div>
+        <div class="prose" data-aos="fade-up" data-aos-delay="100">
+          <p>Classical logic cannot take a conclusion back when new information arrives, so it handles exceptions badly. Defeasible reasoning fixes this, and Rational Closure is one of its key entailment algorithms. For someone who knows classical logic and is meeting defeasible reasoning for the first time, the algorithm is hard to follow: existing tools compute the result, but give little support for exploring the steps that produced it.</p>
+        </div>
+        <div class="rq-box" data-aos="fade-up">
+          <span>Research question</span>
+          <p>How can Rational Closure be presented in a way that makes its intermediate reasoning process easier to inspect and interpret, while also supporting comparison with other defeasible entailment methods?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology & contribution -->
+    <section id="contribution" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Methodology &amp; contribution</span>
+          <h2>Making Rational Closure inspectable</h2>
+          <p>Rational Closure was largely redeveloped from EXTRC to follow Casini and Meyer's definition closely, and now records its state at every iteration: the working set, the exceptionality check, and any rank removed. The step-through replays these states one at a time, each with the matching line of pseudocode and a plain-English explanation. It builds on the components developed as a group, such as BaseRank and the shared step-through layout.</p>
+        </div>
+
+        <div class="row gy-4 services">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-layers"></i></div>
+              <h4>Rank removal</h4>
+              <p>While the query's antecedent is exceptional, the lowest rank is highlighted, greyed out and struck through, so learners can watch each rank being removed as it happens.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <h4>Justifications</h4>
+              <p>"Show Details" gives a classical justification (adapted from Wang): the smallest set of formulas behind an exceptionality result. A weak justification explains the final entailment check.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-water"></i></div>
+              <h4>The drowning problem</h4>
+              <p>A dedicated example shows Rational Closure's best-known limitation in context, marking the statement that caused the contradiction and the unrelated statement that was drowned with it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section id="comparison" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Comparison</span>
+          <h2>Comparing all three algorithms</h2>
+          <p>Comparison mode runs Rational, Lexicographic and Relevant Closure on the same knowledge base and query, in five steps: the shared BaseRank, where the methods diverge, each full step-through, whether each formula is kept, weakened or removed, and finally each method's answer.</p>
+        </div>
+
+        <div class="cmp-table" data-aos="fade-up">
+          <table>
+            <thead>
+              <tr>
+                <th>Case</th>
+                <th>Rational</th>
+                <th>Lexicographic</th>
+                <th>Relevant</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Agreement</b><br><code>penguin |~ &not;flies</code></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Same answer, reached in different ways</small></td>
+              </tr>
+              <tr>
+                <td><b>Drowning problem</b><br><code>penguin |~ wings</code></td>
+                <td><span class="no"><i class="bi bi-x-lg"></i> No</span><small>Removes all of rank 0, losing <code>bird |~ wings</code></small></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Weakens the rank instead</small></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Keeps the relevant information</small></td>
+              </tr>
+              <tr>
+                <td><b>Multi-rank</b><br><code>rockhopper |~ &not;swims</code></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Removes ranks 0 and 1</small></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Removes rank 0, weakens rank 1</small></td>
+                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Works only on relevant information</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluation & results -->
+    <section id="results" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Evaluation &amp; results</span>
+          <h2>Does it work?</h2>
+          <p>The tool was evaluated on correctness, execution time and informal expert feedback. A formal user study was outside the scope of the project.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> All matched</span>
+              <h4>Manual verification</h4>
+              <p>Expected outputs were worked out by hand for entailments, non-entailments, multi-rank knowledge bases and edge cases, and the intermediate steps were checked to follow the order the algorithm prescribes.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> Passing</span>
+              <h4>Unit tests</h4>
+              <p>Cover entailment and non-entailment, rank removal in the drowning problem, and the justifications used in the explanations.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="check-card">
+              <span class="badge"><i class="bi bi-check-lg"></i> Consistent</span>
+              <h4>Existing tools</h4>
+              <p>The same knowledge bases and queries were run through EXTRC and Hamayobe's implementation, and the answers matched on every test case.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="check-card">
+              <span class="badge blue"><i class="bi bi-stopwatch"></i> 0.13 s &rarr; 1.00 s</span>
+              <h4>Execution time</h4>
+              <p>The average time per query rose from 0.13 s for 3 statements to 1.00 s for 30 statements (mean of five runs). Capturing every step trades some speed for transparency.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="check-card">
+              <span class="badge gold"><i class="bi bi-chat-square-quote"></i> Expert feedback</span>
+              <h4>Clear, step-by-step explanations</h4>
+              <p>Members of UCT's AI research group found the explanations clear, with no issues in the reasoning, and highlighted the step-by-step approach as a strength.</p>
+              <p>One reviewer noticed "Show Details" didn't always show the formulas that caused an exceptionality result, so it was rebuilt to use classical justifications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discussion & conclusion -->
+    <section id="discussion" class="section light-background">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Discussion &amp; conclusion</span>
+          <h2>What it shows</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="disc-card">
+              <h4><i class="bi bi-lightbulb"></i> Key findings</h4>
+              <ul>
+                <li>The interface exposes states that match the BaseRank and Rational Closure algorithms.</li>
+                <li>Learners can see <em>how</em> the drowning problem happens, not just that it does.</li>
+                <li>Methods can reach the same answer in different ways, which only the steps reveal.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="disc-card">
+              <h4><i class="bi bi-exclamation-diamond"></i> Limitations</h4>
+              <ul>
+                <li>No formal user study, so effects on learning are not measured.</li>
+                <li>Capturing every step costs speed on larger knowledge bases.</li>
+                <li>The drowning problem is shown with a predefined example, not detected automatically.</li>
+                <li>Input uses logical notation, not natural language.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="disc-card">
+              <h4><i class="bi bi-signpost-2"></i> Future work</h4>
+              <ul>
+                <li>A formal user study of learning outcomes.</li>
+                <li>Caching and larger scaling experiments.</li>
+                <li>Automatic detection of the drowning problem.</li>
+                <li>Natural-language versions of statements, such as "birds typically fly".</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="conclusion-box" data-aos="fade-up">
+          <h3>Conclusion</h3>
+          <p>This work presents a step-through tool that makes Rational Closure inspectable: it shows BaseRank and Rational Closure one step at a time, explains each step in pseudocode and plain English, demonstrates the drowning problem in context, and compares Rational Closure with Lexicographic and Relevant Closure on the same query. It lays a foundation for future user studies and for extending step-through explanations to other defeasible reasoning algorithms.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Read more -->
+    <section id="resources" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-eyebrow">Read more</span>
+          <h2>The full work</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a class="res-link" href="documents/PDR_Nikita_FP.pdf" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-pdf"></i>
+              <div><b>Final paper</b><span>Explaining Defeasible Entailments: A Pedagogical User Interface for Rational Closure</span></div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a class="res-link" href="documents/PDR_Nikita_LR.pdf" target="_blank" rel="noopener">
+              <i class="bi bi-journal-text"></i>
+              <div><b>Literature review</b><span>Background reading for the project</span></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="page-end" data-aos="fade-up">
+          <a class="btn-gold" href="index.html#contributions"><i class="bi bi-arrow-left"></i> Back to home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Arsha</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <!-- <p>© <span>2026 PDR | University of Cape Town.</span> <span>All Rights Reserved</span></p> -->
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Back to home (always visible) -->
+  <a href="index.html#contributions" class="back-home"><i class="bi bi-arrow-left"></i><span>Back to home</span></a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
