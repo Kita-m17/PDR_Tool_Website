@@ -3294,3 +3294,34 @@ section,
     flex-basis: 100%;
   }
 }
+
+/* CTA: two buttons side by side */
+.call-to-action.cta-perry .cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.call-to-action.cta-perry .cta-actions .cta-btn {
+  margin: 0;
+}
+
+.call-to-action.cta-perry .cta-btn.cta-btn-outline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  color: #fff;
+  box-shadow: none;
+}
+
+.call-to-action.cta-perry .cta-btn.cta-btn-outline:hover {
+  border-color: var(--gold);
+  background: transparent;
+  color: var(--gold);
+}
+
+@media (max-width: 991px) {
+  .call-to-action.cta-perry .cta-actions {
+    justify-content: center;
+  }
+}

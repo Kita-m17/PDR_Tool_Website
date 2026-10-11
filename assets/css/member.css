@@ -416,3 +416,13 @@
     justify-content: center;
   }
 }
+
+/* comparison table: black headings and lines between columns */
+.cmp-table th {
+  color: #000;
+}
+
+.cmp-table th + th,
+.cmp-table td + td {
+  border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
