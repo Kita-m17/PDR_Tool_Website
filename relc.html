@@ -155,27 +155,10 @@
         <div class="section-head" data-aos="fade-up">
           <span class="section-eyebrow">Comparison</span>
           <h2>Basic, Minimal and Rational</h2>
-          <p><strong>Basic</strong> Relevant Closure treats every statement in a justification as relevant. <strong>Minimal</strong> Relevant Closure only takes the lowest-ranked statement in each justification, so it removes the most defeasible information and keeps more specific information for the final check. Both remove less than Rational Closure, as the Perry example shows:</p>
+          <p><strong>Basic</strong> Relevant Closure treats every statement in a justification as relevant. <strong>Minimal</strong> Relevant Closure only takes the lowest-ranked statement in each justification, so it removes the most defeasible information and keeps more specific information for the final check. Both remove less than Rational Closure.</p>
         </div>
 
-        <div class="cmp-table" data-aos="fade-up">
-          <table>
-            <thead>
-              <tr>
-                <th>Query</th>
-                <th>Rational Closure</th>
-                <th>Basic Relevant Closure</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>perry |~ bill</code></td>
-                <td><span class="no"><i class="bi bi-x-lg"></i> No</span><small>Removes all of rank 0, losing <code>platypus |~ bill</code></small></td>
-                <td><span class="yes"><i class="bi bi-check-lg"></i> Yes</span><small>Only removes <code>platypus |~ &not;hat</code>, the statement in the conflict, so <code>platypus |~ bill</code> remains</small></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+       
       </div>
     </section>
 
