@@ -105,7 +105,7 @@
           <h2>Computing an answer is not the same as understanding it</h2>
         </div>
         <div class="prose" data-aos="fade-up" data-aos-delay="100">
-          <p>Classical logic cannot take a conclusion back when new information arrives, so it handles exceptions badly. Defeasible reasoning fixes this, and Rational Closure is one of its key entailment algorithms. For someone who knows classical logic and is meeting defeasible reasoning for the first time, the algorithm is hard to follow: seeing the final answer is not the same as understanding the steps that produced it.</p>
+          <p>Classical logic cannot take a conclusion back when new information arrives, so it handles exceptions badly. Defeasible reasoning fixes this by allowing conclusions to be hold typically, rather than always, and that can by revised when more specific information is introduced. Rational Closure is one of its key entailment algorithms. For someone who knows classical logic and is meeting defeasible reasoning for the first time, the algorithm can be hard to follow, because the final answer alone does not show how it was reached.</p>
         </div>
         <div class="rq-box" data-aos="fade-up">
           <span>Research question</span>
@@ -127,21 +127,21 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item">
               <div class="icon"><i class="bi bi-layers"></i></div>
-              <h4>Rank removal</h4>
+              <h3>Rank removal</h3>
               <p>While the query's antecedent is exceptional, the lowest rank is highlighted, greyed out and struck through, so learners can watch each rank being removed as it happens.</p>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item">
               <div class="icon"><i class="bi bi-search"></i></div>
-              <h4>Justifications</h4>
+              <h3>Justifications</h3>
               <p>"Show Details" gives a classical justification (adapted from Wang): the smallest set of formulas behind an exceptionality result. A weak justification explains the final entailment check.</p>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item">
               <div class="icon"><i class="bi bi-water"></i></div>
-              <h4>The drowning problem</h4>
+              <h3>The drowning problem</h3>
               <p>A dedicated example shows Rational Closure's best-known limitation in context, marking the statement that caused the contradiction and the unrelated statement that was drowned with it.</p>
             </div>
           </div>
@@ -206,35 +206,35 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> All matched</span>
-              <h4>Manual verification</h4>
+              <h3>Manual verification</h3>
               <p>Expected outputs were worked out by hand for entailments, non-entailments, multi-rank knowledge bases and edge cases, and the intermediate steps were checked to follow the order the algorithm prescribes.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> Passing</span>
-              <h4>Unit tests</h4>
+              <h3>Unit tests</h3>
               <p>Cover entailment and non-entailment, rank removal in the drowning problem, and the justifications used in the explanations.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> Consistent</span>
-              <h4>Existing tools</h4>
+              <h3>Existing tools</h3>
               <p>The same knowledge bases and queries were run through EXTRC and Hamayobe's implementation, and the answers matched on every test case.</p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="check-card">
               <span class="badge blue"><i class="bi bi-stopwatch"></i> 0.13 s &rarr; 1.00 s</span>
-              <h4>Execution time</h4>
+              <h3>Execution time</h3>
               <p>The average time per query rose from 0.13 s for 3 statements to 1.00 s for 30 statements (mean of five runs). Capturing every step trades some speed for transparency.</p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="check-card">
               <span class="badge gold"><i class="bi bi-chat-square-quote"></i> Expert feedback</span>
-              <h4>Clear, step-by-step explanations</h4>
+              <h3>Clear, step-by-step explanations</h3>
               <p>Members of UCT's AI research group found the explanations clear, with no issues in the reasoning, and highlighted the step-by-step approach as a strength.</p>
               <p>One reviewer noticed "Show Details" didn't always show the formulas that caused an exceptionality result, so it was rebuilt to use classical justifications.</p>
             </div>
@@ -254,7 +254,7 @@
         <div class="row gy-4">
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="disc-card">
-              <h4><i class="bi bi-lightbulb"></i> Key findings</h4>
+              <h3><i class="bi bi-lightbulb"></i> Key findings</h3>
               <ul>
                 <li>The interface exposes states that match the BaseRank and Rational Closure algorithms.</li>
                 <li>Learners can see <em>how</em> the drowning problem happens, not just that it does.</li>
@@ -264,7 +264,7 @@
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="disc-card">
-              <h4><i class="bi bi-exclamation-diamond"></i> Limitations</h4>
+              <h3><i class="bi bi-exclamation-diamond"></i> Limitations</h3>
               <ul>
                 <li>No formal user study, so effects on learning are not measured.</li>
                 <li>Capturing every step costs speed on larger knowledge bases.</li>
@@ -275,7 +275,7 @@
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="disc-card">
-              <h4><i class="bi bi-signpost-2"></i> Future work</h4>
+              <h3><i class="bi bi-signpost-2"></i> Future work</h3>
               <ul>
                 <li>A formal user study of learning outcomes.</li>
                 <li>Caching and larger scaling experiments.</li>
@@ -333,31 +333,12 @@
 
         <!-- UCT info -->
         <div class="footer-box footer-info">
-          <p class="uc-title">University of Cape Town</p>
-          <p>Department of Computer Science</p>
-          <p><a href="https://sit.uct.ac.za" target="_blank" rel="noopener">www.sit.uct.ac.za</a></p>
-        </div>
-
-        <!-- Team -->
-        <div class="footer-box">
-          <strong class="footer-box-title">Team</strong>
-          <ul>
-            <li>Nikita Martin</li>
-            <li>Samukelisiwe Zwane</li>
-            <li>Liam De Saldanha</li>
-            <li class="supervisor">Supervised by Prof. Tommie Meyer</li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="footer-box">
-          <strong class="footer-box-title">Contact</strong>
-          <ul>
-            <li><a href="mailto:mrtnik003@myuct.ac.za">mrtnik003@myuct.ac.za</a></li>
-            <li><a href="mailto:zwnsam011@myuct.ac.za">zwnsam011@myuct.ac.za</a></li>
-            <li><a href="mailto:dsllia002@myuct.ac.za">dsllia002@myuct.ac.za</a></li>
-            <li><a href="mailto:tmeyer@cair.org.za">tmeyer@cair.org.za</a></li>
-          </ul>
+          <img src="assets/img/school-of-it-logo.png" alt="UCT School of IT logo" class="footer-sit-logo" loading="lazy">
+          <div class="footer-info-text">
+            <p class="uc-title">University of Cape Town</p>
+            <p>Department of Computer Science</p>
+            <p><a href="https://sit.uct.ac.za" target="_blank" rel="noopener">www.sit.uct.ac.za</a></p>
+          </div>
         </div>
 
         <!-- Right logo -->
@@ -368,6 +349,7 @@
       <div class="footer-credits">
         &copy; 2026 PDR Project &middot; Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
+      
     </div>
   </footer>
 

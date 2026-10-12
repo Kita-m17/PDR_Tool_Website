@@ -127,21 +127,21 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item">
               <div class="icon"><i class="bi bi-search"></i></div>
-              <h4>Justifications</h4>
+              <h3>Justifications</h3>
               <p>The Partition page steps through sets of statements, tagging each as entailed and minimal, and explains whether it is a justification. Filters show all sets, only entailed sets, or only justifications.</p>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item">
               <div class="icon"><i class="bi bi-diagram-2"></i></div>
-              <h4>Relevance partition</h4>
+              <h3>Relevance partition</h3>
               <p>The justifications are combined into the relevant partition, and everything else, including the classical statements, forms the irrelevant partition.</p>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item">
               <div class="icon"><i class="bi bi-layers"></i></div>
-              <h4>Statement removal</h4>
+              <h3>Statement removal</h3>
               <p>The running knowledge base shrinks as relevant statements are removed rank by rank, with the sets before and after each removal. An entailed query comes with its smallest weak justification.</p>
             </div>
           </div>
@@ -175,28 +175,28 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> Passing</span>
-              <h4>Unit tests from the literature</h4>
+              <h3>Unit tests from the literature</h3>
               <p>JUnit tests based on worked examples from different research papers verify Base Rank, the relevance partition and Relevant Closure.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> Consistent</span>
-              <h4>Existing tools</h4>
+              <h3>Existing tools</h3>
               <p>Existing defeasible entailment tools were also used to verify the Base Rank, partition and Relevant Closure implementations.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="check-card highlight">
               <span class="badge gold"><i class="bi bi-bug"></i> Found an error</span>
-              <h4>A fault in an existing tool</h4>
+              <h3>A fault in an existing tool</h3>
               <p>Testing revealed that klm-algorithms gave wrong Basic Relevant Closure answers in some cases. A manual work-through confirmed it, and the researcher was notified.</p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="check-card">
               <span class="badge blue"><i class="bi bi-speedometer2"></i> Power set &rarr; hitting set tree</span>
-              <h4>Performance</h4>
+              <h3>Performance</h3>
               <p>Checking every set in the power set grows at 2<sup>N</sup>, which made Relevant Closure far slower than the other algorithms. Switching to the hitting set tree, which shows a sample of sets that still includes every justification, made it competitive.</p>
               <p>Finding the partition still takes most of the time as knowledge bases grow, which is expected.</p>
             </div>
@@ -204,7 +204,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="check-card">
               <span class="badge gold"><i class="bi bi-chat-square-quote"></i> Expert feedback</span>
-              <h4>Clear and faithful</h4>
+              <h3>Clear and faithful</h3>
               <p>Members of UCT's Knowledge Representation and Reasoning group found the explanations clear and faithful, and found no reasoning errors.</p>
               <p>They suggested validating formulas as they're entered, so the input now checks formulas in real time with descriptive error messages.</p>
             </div>
@@ -224,7 +224,7 @@
         <div class="row gy-4">
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="disc-card">
-              <h4><i class="bi bi-lightbulb"></i> Key findings</h4>
+              <h3><i class="bi bi-lightbulb"></i> Key findings</h3>
               <ul>
                 <li>The step-through leaves no guessing about why a statement is removed, or why a set isn't a justification.</li>
                 <li>Exposing the internal computations kept the answers correct.</li>
@@ -234,7 +234,7 @@
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="disc-card">
-              <h4><i class="bi bi-exclamation-diamond"></i> Limitations</h4>
+              <h3><i class="bi bi-exclamation-diamond"></i> Limitations</h3>
               <ul>
                 <li>No formal user study, so effects on learning are not measured.</li>
                 <li>The hitting set tree shows a sample of sets, not the full power set.</li>
@@ -244,7 +244,7 @@
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="disc-card">
-              <h4><i class="bi bi-signpost-2"></i> Future work</h4>
+              <h3><i class="bi bi-signpost-2"></i> Future work</h3>
               <ul>
                 <li>Strong justifications and minimal rank establishing sets.</li>
                 <li>Justification browsing, and justifications drawn as trees or graphs.</li>
@@ -301,31 +301,12 @@
 
         <!-- UCT info -->
         <div class="footer-box footer-info">
-          <p class="uc-title">University of Cape Town</p>
-          <p>Department of Computer Science</p>
-          <p><a href="https://sit.uct.ac.za" target="_blank" rel="noopener">www.sit.uct.ac.za</a></p>
-        </div>
-
-        <!-- Team -->
-        <div class="footer-box">
-          <strong class="footer-box-title">Team</strong>
-          <ul>
-            <li>Nikita Martin</li>
-            <li>Samukelisiwe Zwane</li>
-            <li>Liam De Saldanha</li>
-            <li class="supervisor">Supervised by Prof. Tommie Meyer</li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="footer-box">
-          <strong class="footer-box-title">Contact</strong>
-          <ul>
-            <li><a href="mailto:mrtnik003@myuct.ac.za">mrtnik003@myuct.ac.za</a></li>
-            <li><a href="mailto:zwnsam011@myuct.ac.za">zwnsam011@myuct.ac.za</a></li>
-            <li><a href="mailto:dsllia002@myuct.ac.za">dsllia002@myuct.ac.za</a></li>
-            <li><a href="mailto:tmeyer@cair.org.za">tmeyer@cair.org.za</a></li>
-          </ul>
+          <img src="assets/img/school-of-it-logo.png" alt="UCT School of IT logo" class="footer-sit-logo" loading="lazy">
+          <div class="footer-info-text">
+            <p class="uc-title">University of Cape Town</p>
+            <p>Department of Computer Science</p>
+            <p><a href="https://sit.uct.ac.za" target="_blank" rel="noopener">www.sit.uct.ac.za</a></p>
+          </div>
         </div>
 
         <!-- Right logo -->
@@ -336,6 +317,7 @@
       <div class="footer-credits">
         &copy; 2026 PDR Project &middot; Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
+      
     </div>
   </footer>
 

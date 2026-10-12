@@ -689,7 +689,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0s !important;
   }
 }
 
@@ -1055,6 +1055,7 @@ section,
   color: var(--accent-color);
 }
 
+.background .background-topic h3,
 .background .background-topic h4 {
   margin: 10px 0 12px;
   font-size: 20px;
@@ -1539,7 +1540,7 @@ section,
   margin-top: 10px;
   font-size: 13.5px;
   color: var(--pdr-muted);
-  word-break: break-word;
+  overflow-wrap: anywhere;
   transition: color 0.25s;
 }
 
@@ -2039,6 +2040,7 @@ section,
   transition: 0.3s;
 }
 
+.services .service-item h3,
 .services .service-item h4 {
   font-weight: 700;
   margin-bottom: 15px;

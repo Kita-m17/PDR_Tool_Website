@@ -127,21 +127,21 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item">
               <div class="icon"><i class="bi bi-sliders"></i></div>
-              <h4>Rank weakening</h4>
+              <h3>Rank weakening</h3>
               <p>A weakened rank shows its original statements struck through, with the replacement formula underneath. Each step covers one subset size, so the shrinking rank stays easy to follow.</p>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item">
               <div class="icon"><i class="bi bi-grid-3x3-gap"></i></div>
-              <h4>Every subset checked</h4>
+              <h3>Every subset checked</h3>
               <p>Each sub-knowledge base is listed with whether it still refutes the query's antecedent. Failed subsets are kept, so it's clear why the algorithm had to move to a smaller size.</p>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item">
               <div class="icon"><i class="bi bi-search"></i></div>
-              <h4>Justification</h4>
+              <h3>Justification</h3>
               <p>The final step shows the surviving knowledge base, the final entailment check, and a justification: the smallest set of surviving statements that entails the query on its own.</p>
             </div>
           </div>
@@ -192,42 +192,42 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> All matched</span>
-              <h4>Existing implementations</h4>
+              <h3>Existing implementations</h3>
               <p>Five test knowledge bases, covering cases from multiple subset sizes to an antecedent inconsistent with rank &infin;, gave the same results as Moloi's and Hamayobe's implementations.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> Matched</span>
-              <h4>Worked by hand</h4>
+              <h3>Worked by hand</h3>
               <p>Expected results were worked out from the algorithm's definition for entailments, non-entailments, no weakening, a weakened rank, and a rank removed completely.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> Passing</span>
-              <h4>Unit tests</h4>
+              <h3>Unit tests</h3>
               <p>Cover entailed and non-entailed queries, exceptional antecedents, unsupported conclusions, the drowning problem, and specific exceptions overriding general defaults.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="check-card">
               <span class="badge"><i class="bi bi-check-lg"></i> Faithful</span>
-              <h4>Faithful to the reasoner</h4>
+              <h3>Faithful to the reasoner</h3>
               <p>The subsets, working knowledge base, ranking changes and highlighted pseudocode shown at each step all matched the state recorded by the reasoner.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="check-card">
               <span class="badge blue"><i class="bi bi-cpu"></i> Up to 2<sup>n</sup> checks</span>
-              <h4>The cost of the detail</h4>
+              <h3>The cost of the detail</h3>
               <p>Checking subsets one by one can take up to 2<sup>n</sup> satisfiability checks for a rank of <em>n</em> statements, compared with at most <em>n</em> for a combined check, so the tool suits small knowledge bases.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="check-card">
               <span class="badge gold"><i class="bi bi-chat-square-quote"></i> Expert feedback</span>
-              <h4>Clear and useful</h4>
+              <h3>Clear and useful</h3>
               <p>Members of UCT's Logic-Based AI research group found the algorithm clear, and singled out the display of the sub-knowledge bases as a useful part of the interface.</p>
             </div>
           </div>
@@ -246,7 +246,7 @@
         <div class="row gy-4">
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="disc-card">
-              <h4><i class="bi bi-lightbulb"></i> Key findings</h4>
+              <h3><i class="bi bi-lightbulb"></i> Key findings</h3>
               <ul>
                 <li>Grouping subsets by size gives enough detail to follow the weakening, without an overly long trace.</li>
                 <li>The failed subsets are part of the explanation: they show why a subset size was rejected.</li>
@@ -256,7 +256,7 @@
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="disc-card">
-              <h4><i class="bi bi-exclamation-diamond"></i> Limitations</h4>
+              <h3><i class="bi bi-exclamation-diamond"></i> Limitations</h3>
               <ul>
                 <li>No formal user testing, so effects on learning are not measured.</li>
                 <li>The number of subsets grows exponentially with the size of the rank, so larger knowledge bases are slower and produce longer traces.</li>
@@ -265,7 +265,7 @@
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="disc-card">
-              <h4><i class="bi bi-signpost-2"></i> Future work</h4>
+              <h3><i class="bi bi-signpost-2"></i> Future work</h3>
               <ul>
                 <li>Support more defeasible entailment algorithms for comparison.</li>
                 <li>Reduce the number of subsets checked, while keeping the trace.</li>
@@ -323,31 +323,12 @@
 
         <!-- UCT info -->
         <div class="footer-box footer-info">
-          <p class="uc-title">University of Cape Town</p>
-          <p>Department of Computer Science</p>
-          <p><a href="https://sit.uct.ac.za" target="_blank" rel="noopener">www.sit.uct.ac.za</a></p>
-        </div>
-
-        <!-- Team -->
-        <div class="footer-box">
-          <strong class="footer-box-title">Team</strong>
-          <ul>
-            <li>Nikita Martin</li>
-            <li>Samukelisiwe Zwane</li>
-            <li>Liam De Saldanha</li>
-            <li class="supervisor">Supervised by Prof. Tommie Meyer</li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="footer-box">
-          <strong class="footer-box-title">Contact</strong>
-          <ul>
-            <li><a href="mailto:mrtnik003@myuct.ac.za">mrtnik003@myuct.ac.za</a></li>
-            <li><a href="mailto:zwnsam011@myuct.ac.za">zwnsam011@myuct.ac.za</a></li>
-            <li><a href="mailto:dsllia002@myuct.ac.za">dsllia002@myuct.ac.za</a></li>
-            <li><a href="mailto:tmeyer@cair.org.za">tmeyer@cair.org.za</a></li>
-          </ul>
+          <img src="assets/img/school-of-it-logo.png" alt="UCT School of IT logo" class="footer-sit-logo" loading="lazy">
+          <div class="footer-info-text">
+            <p class="uc-title">University of Cape Town</p>
+            <p>Department of Computer Science</p>
+            <p><a href="https://sit.uct.ac.za" target="_blank" rel="noopener">www.sit.uct.ac.za</a></p>
+          </div>
         </div>
 
         <!-- Right logo -->
@@ -358,6 +339,7 @@
       <div class="footer-credits">
         &copy; 2026 PDR Project &middot; Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
+      
     </div>
   </footer>
 
