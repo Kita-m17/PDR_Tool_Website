@@ -118,16 +118,25 @@
 
         <div class="overview-stats">
           <div class="overview-stat" data-aos="fade-up" data-aos-delay="200">
-            <b class="count" data-count="4">4</b>
-            <span>algorithms: Rational, Lexicographic, Basic and Minimal Relevant Closure</span>
+            <div class="stat-top">
+              <b class="count" data-count="4">4</b>
+              <h4 class="stat-head">Algorithms</h4>
+            </div>
+            <span>Rational, Lexicographic, Basic and Minimal Relevant Closure</span>
           </div>
           <div class="overview-stat" data-aos="fade-up" data-aos-delay="300">
-            <b class="count" data-count="4">4</b>
-            <span>learning aids: comparison, drowning problem, tutorial, glossary</span>
+            <div class="stat-top">
+              <b class="count" data-count="4">4</b>
+              <h4 class="stat-head">Learning aids</h4>
+            </div>
+            <span>Comparison, drowning problem, tutorial, glossary</span>
           </div>
           <div class="overview-stat" data-aos="fade-up" data-aos-delay="400">
-            <b class="count" data-count="3">3</b>
-            <span>ways we checked it: worked examples, existing tools and expert feedback</span>
+            <div class="stat-top">
+              <b class="count" data-count="3">3</b>
+              <h4 class="stat-head">Ways we checked it</h4>
+            </div>
+            <span>Worked examples, existing tools and expert feedback</span>
           </div>
         </div>
 
@@ -154,14 +163,14 @@
               <h4>Classical logic</h4>
               <p>Knowledge is written in propositional logic: simple statements called <em>atoms</em>, such as <em>platypus</em> or <em>hat</em>, joined by &not; (not), &and; (and), &or; (or) and &rarr; (implies). A conclusion follows when it is true in every situation where the knowledge base is true.</p>
               <p>Classical reasoning is <strong>monotonic</strong>: adding new information can never take a conclusion back, so it cannot handle exceptions.</p>
-              <p class="topic-example"><span>e.g.</span> If platypuses never wear hats but Perry does, the only consistent answer is that Perry doesn't exist.</p>
+              <p class="topic-example"><span>e.g.</span> If Perry is a platypus, platypuses never wear hats but Perry does, the only consistent answer is that Perry doesn't exist.</p>
             </div>
 
             <div class="col-lg-6 background-topic">
               <i class="bi bi-signpost-split topic-icon"></i>
               <h4>Defeasible reasoning</h4>
               <p>Defeasible reasoning adds "typically", written &alpha; |&sim; &beta;. Conclusions are tentative and can be overridden by more specific information. The KLM framework (Kraus, Lehmann and Magidor, 1990) gives it a formal foundation.</p>
-              <p class="topic-example"><span>e.g.</span> platypus |&sim; &not;hat and perry |&sim; hat: Perry is simply an exceptional platypus.</p>
+              <p class="topic-example"><span>e.g.</span> Perry &rarr; platypus, platypus |&sim; &not;hat and Perry |&sim; hat: Perry is simply an exceptional platypus.</p>
             </div>
 
             <!-- Perry example: no hat -> hat -->
@@ -213,7 +222,7 @@
             <div class="service-item">
               <div class="icon"><i class="bi bi-bullseye"></i></div>
               <h4>Relevant Closure</h4>
-              <p>Finds the statements that are actually responsible for the conflict (its justifications) and only removes those.</p>
+              <p>Instead of removing entire ranks we remove statements that are in the relevant partition. This partition contains all statements causing a conflict when we check our query.</p>
               <span class="algo-cite">Casini, Meyer, Moodley &amp; Nortj&eacute;, 2014</span>
             </div>
           </div>
@@ -646,31 +655,12 @@
 
         <!-- UCT info -->
         <div class="footer-box footer-info">
-          <p class="uc-title">University of Cape Town</p>
-          <p>Department of Computer Science</p>
-          <p><a href="https://sit.uct.ac.za" target="_blank" rel="noopener">www.sit.uct.ac.za</a></p>
-        </div>
-
-        <!-- Team -->
-        <div class="footer-box">
-          <strong class="footer-box-title">Team</strong>
-          <ul>
-            <li>Nikita Martin</li>
-            <li>Samukelisiwe Zwane</li>
-            <li>Liam De Saldanha</li>
-            <li class="supervisor">Supervised by Prof. Tommie Meyer</li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="footer-box">
-          <strong class="footer-box-title">Contact</strong>
-          <ul>
-            <li><a href="mailto:mrtnik003@myuct.ac.za">mrtnik003@myuct.ac.za</a></li>
-            <li><a href="mailto:zwnsam011@myuct.ac.za">zwnsam011@myuct.ac.za</a></li>
-            <li><a href="mailto:dsllia002@myuct.ac.za">dsllia002@myuct.ac.za</a></li>
-            <li><a href="mailto:tmeyer@cair.org.za">tmeyer@cair.org.za</a></li>
-          </ul>
+          <img src="assets/img/school-of-it-logo.png" alt="UCT School of IT logo" class="footer-sit-logo" loading="lazy">
+          <div class="footer-info-text">
+            <p class="uc-title">University of Cape Town</p>
+            <p>Department of Computer Science</p>
+            <p><a href="https://sit.uct.ac.za" target="_blank" rel="noopener">www.sit.uct.ac.za</a></p>
+          </div>
         </div>
 
         <!-- Right logo -->

@@ -1704,6 +1704,26 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 35%);
 }
 
+.overview .overview-stat .stat-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.overview .overview-stat .stat-top b {
+  margin-bottom: 0;
+}
+
+.overview .overview-stat .stat-head {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+
 /* Overview: abstract */
 .overview .overview-abstract {
   max-width: 900px;
@@ -3223,6 +3243,31 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* UCT info box: School of IT logo beside the text */
+.pdr-footer .footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px 24px;
+}
+
+.pdr-footer .footer-sit-logo {
+  height: 42px;
+  max-width: 100%;
+  object-fit: contain;
+  width: auto;
+  padding-right: 24px;
+  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+@media (max-width: 575px) {
+  .pdr-footer .footer-sit-logo {
+    padding-right: 0;
+    border-right: 0;
+  }
 }
 
 .pdr-footer .footer-box p {
